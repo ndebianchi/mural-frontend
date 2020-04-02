@@ -2,6 +2,11 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 
@@ -10,7 +15,6 @@ body {
 /* ************** */
 
 .sidebarMobile {
-  display: block;
   height: 100%;  /* 100% Full-height */
   width: 250px;  /* 0 width - change this with JavaScript */
   position: fixed;  /* Stay in place */
@@ -64,27 +68,25 @@ body {
 
 .sidebarDesktop {
   display: none;
-  height: 100%;  /* 100% Full-height */
-  width: 250px;  /* 0 width - change this with JavaScript */
-  position: fixed;  /* Stay in place */
-  z-index: 1;  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #F70065;
-  overflow-x: hidden;  /* Disable horizontal scroll */
-  padding-top: 60px;  /* Place content 60px from the top */
-  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
-  transform: translateX(-100%);
+  min-width: 250px;
+  max-width: 300px;
+  width: 25vw;
+  height: 100%;
+  background: white;
+  position: fixed;
+  padding-top: 60px;
+  /* padding-left: 1%;
+  padding-right: 6%; */
+  border-right: 4px solid #f70065; 
 }
 
 .sidebarDesktop a {
+  display: none;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
-  display: none;
+  color: black;  
   align-items: center;
-  transition: 0.3s;
 }
 
 .sidebarDesktop a img {
@@ -102,18 +104,29 @@ body {
   .sidebarMobile { display: none; }  
   .openbtn { display: none; }
 
-  .sidebarDesktop { display: flex; }
-  .sidebarDesktop a { display: flex; }
+
+  .sidebarDesktop { display: block; }
+  .sidebarDesktop a { display: flex; }  
 }
+
+
 
 
 
 /* Main Section -- descartavel -- */
 #main {
   padding: 20px;
+  background-color: tomato;
+  width: 100%;
 }
 
 #div-logo {
   margin: 20px;
   padding: 10px;
+}
+
+#mural {
+  display: flex;
+  height: 100vh;  
+  background-color: yellow;
 }
