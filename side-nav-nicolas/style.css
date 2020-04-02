@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* ************** */
+/* SIDEBAR MOBILE */
+/* ************** */
+
+.sidebarMobile {
+  display: block;
+  height: 100%;  /* 100% Full-height */
+  width: 250px;  /* 0 width - change this with JavaScript */
+  position: fixed;  /* Stay in place */
+  z-index: 1;  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #F70065;
+  overflow-x: hidden;  /* Disable horizontal scroll */
+  padding-top: 60px;  /* Place content 60px from the top */
+  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
+  transform: translateX(-100%);
+}
+
+.sidebarMobile a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.sidebarMobile a img {
+  width: 1.3em;
+  padding-right: 0.5em;
+}
+
+/* Botão Fechar - Pos e Estilo (top right corner) */
+.sidebarMobile .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Botão pra abrir sidebar*/
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: #707070;
+  border: none;
+}
+
+
+/* *************** */
+/* SIDEBAR DESKTOP */
+/* *************** */
+
+.sidebarDesktop {
+  display: none;
+  height: 100%;  /* 100% Full-height */
+  width: 250px;  /* 0 width - change this with JavaScript */
+  position: fixed;  /* Stay in place */
+  z-index: 1;  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #F70065;
+  overflow-x: hidden;  /* Disable horizontal scroll */
+  padding-top: 60px;  /* Place content 60px from the top */
+  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
+  transform: translateX(-100%);
+}
+
+.sidebarDesktop a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: none;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.sidebarDesktop a img {
+  width: 1.3em;
+  padding-right: 0.5em;
+}
+
+
+/* *********** */
+/* MEDIA QUERY */
+/* *********** */
+
+/* Esconde Sidebar Mobile em res > 992px */
+@media screen and (min-width: 992px) {
+  .sidebarMobile { display: none; }  
+  .openbtn { display: none; }
+
+  .sidebarDesktop { display: flex; }
+  .sidebarDesktop a { display: flex; }
+}
+
+
+
+/* Main Section -- descartavel -- */
+#main {
+  padding: 20px;
+}
+
+#div-logo {
+  margin: 20px;
+  padding: 10px;
+}
