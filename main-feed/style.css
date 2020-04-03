@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
 }
 
@@ -15,6 +14,7 @@ body {
 /* ************** */
 
 .sidebarMobile {
+  font-family: 'Roboto Condensed', sans-serif;
   height: 100%;  /* 100% Full-height */
   width: 250px;  /* 0 width - change this with JavaScript */
   position: fixed;  /* Stay in place */
@@ -26,6 +26,22 @@ body {
   padding-top: 60px;  /* Place content 60px from the top */
   transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
   transform: translateX(-100%);
+}
+
+#logo-nav {
+  width: 80%;
+  margin: 20px;
+  padding-bottom: 25px;  
+  border-bottom: white solid 2px;
+  margin-bottom: 40px;
+}
+#logo-nav a img{
+  width: 100%;
+}
+
+#logo-nav a:hover{
+  background-color:white;
+  
 }
 
 .sidebarMobile a {
@@ -67,6 +83,8 @@ body {
 /* *************** */
 
 .sidebarDesktop {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
   display: none;
   min-width: 250px;
   max-width: 300px;
@@ -80,9 +98,14 @@ body {
   
 }
 
-.sidebarDesktop a {
+.sidebarDesktop div {
+  padding: 0;
+}
+
+.sidebarDesktop div a {
   display: none;
-  padding: 8px 8px 8px 32px;
+  padding: 10px;
+  margin-left: 30px;
   text-decoration: none;
   font-size: 18px;
   color: black;  
@@ -94,26 +117,21 @@ body {
   padding-right: 0.5em;
 }
 
-
-/* *********** */
-/* MEDIA QUERY */
-/* *********** */
-
-/* Esconde Sidebar Mobile em res > 992px */
-@media screen and (min-width: 992px) {
-  .sidebarMobile { display: none; }  
-  .openbtn { display: none; }
-
-
-  .sidebarDesktop { display: block; }
-  .sidebarDesktop a { display: flex; }  
+.sidebarDesktop a:hover {
+  background-color: #FC81B966;
+  color: #F70065;
+  border-radius: 29px;
+  opacity: 1;
 }
+
+
 
 
 /* Main Section -- descartavel (mais ou menos) -- */
 #main {
   padding: 20px;
   width: 100%;
+  margin-left: 0;
 }
 
 #div-logo {
@@ -125,4 +143,29 @@ body {
   display: flex;
   height: 100vh;  
   justify-content: flex-start;
+}
+
+/* *********** */
+/* MEDIA QUERY */
+/* *********** */
+
+@media screen and (min-width: 992px) {
+  .sidebarMobile { display: none; }  
+  .openbtn { display: none; }
+
+
+  .sidebarDesktop { 
+    display: block; 
+  }
+  .sidebarDesktop div {display: block;}
+  .sidebarDesktop div a { display: inline-block; }
+  
+  #main {
+    margin-left: 300px;
+  }
+
+  #logo-nav {
+    border-bottom: #F70065 solid 2px;
+  }
+  
 }
