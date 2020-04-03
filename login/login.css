@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+}
+
+#mural {
+    display: flex;
+    height: 100vh;  
+    justify-content: flex-start;
+  }
+
+#main {
+    display: block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+#main div {
+    margin: 10px;
+}
+
+#main div a{
+    text-decoration: none;
+    color: #F70065;
+}
+
+
+.logo {
+    width: 70%;
+    max-width: 400px;
+    padding: 30px;    
+    margin: 0 auto 60px!important;
+    border-bottom: solid #F70065 2px;    
+}
+
+
+.login {
+    display: block;
+    width: 100%;
+}
+
+.login div label {
+    font-weight: 600;
+    color: #707070;    
+}
+
+.login div input {
+    padding: 6px;
+    width: 60%;
+    max-width: 250px;
+    border-radius: 25px;
+    border: solid 1px #707070;    
+}
+
+.login div button {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    background-color: white;
+    color: #707070;
+    text-decoration: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+/* DESKTOP */
+
+.topo {
+    display: none;
+    border-bottom: #F70065 2px solid;
+    margin: 80px auto 30px!important;
+    width: 30%;
+    max-width: 250px;
+}
+
+.aside {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 33%;
+    max-width: 500px;
+    background-color: #F70065;
+    justify-content: center;    
+    align-items: center;
+}
+
+.aside div {
+    width: 80%;    
+}
+
+@media screen and (min-width: 992px){
+    .logo { display: none; }
+
+    .topo { display: block }
+
+    #main { margin-left: 300px; }
+
+    .aside { display: flex; }
+
+    .login div button:hover {
+        cursor: pointer;
+        color: #F70065;
+        border: #F70065 solid 1px;
+        border-radius: 25px;
+    }
+}
+
