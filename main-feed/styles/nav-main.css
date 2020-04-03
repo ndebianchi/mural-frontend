@@ -23,7 +23,7 @@ body {
   left: 0;
   background-color: #F70065;
   overflow-x: hidden;  /* Disable horizontal scroll */
-  padding-top: 60px;  /* Place content 60px from the top */
+  padding-top: 30px;  /* Place content 60px from the top */
   transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
   transform: translateX(-100%);
 }
@@ -35,6 +35,7 @@ body {
   border-bottom: white solid 2px;
   margin-bottom: 40px;
 }
+
 #logo-nav a img{
   width: 100%;
 }
@@ -92,11 +93,11 @@ body {
   width: 25vw;
   height: 100%;
   background: white;
-  padding-top: 60px;
-  border-right: 4px solid #f70065;
-  /* Problema ta aqui */
+  border-right: 3px solid #f70065;
+  overflow-x: hidden;
   position: fixed;
-  
+  top: 0;
+  left: 0;  
 }
 
 .sidebarDesktop div {
@@ -127,7 +128,6 @@ body {
 
 
 
-
 /* Main Section -- descartavel (mais ou menos) -- */
 #main {
   width: 100%;
@@ -149,22 +149,18 @@ body {
 /* *********** */
 
 @media screen and (min-width: 992px) {
+  /* esconde nav-mobile e sanduiche */
   .sidebarMobile { display: none; }  
   .openbtn { display: none; }
 
-
-  .sidebarDesktop { 
-    display: block; 
-  }
+  /* mostra nav-desktop */
+  .sidebarDesktop { display: block; }
   .sidebarDesktop div {display: block;}
   .sidebarDesktop div a { display: inline-block; }
   
-  #main {
-    margin-left: 300px;
-  }
+  /* aplica margem */
+  #main { margin-left: 300px; }
 
-  #logo-nav {
-    border-bottom: #F70065 solid 2px;
-  }
-  
+  /* muda cor da linha do logo na nav */
+  #logo-nav { border-bottom: #F70065 solid 2px; }  
 }
