@@ -66,8 +66,8 @@ header img {
 
 .tipoPost{
     position: relative;
-    top: 25px;
-    right: 35px;
+    top: 30%;
+    right: 30px;
 }
 
 /* Textos post: Apartamento, Post, Likes e Respostas */
@@ -108,7 +108,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 40px;
+    margin: 0% 5%;
 }
 
 footer ul{
@@ -138,7 +138,7 @@ footer ul{
     border-radius: 11px;
     font-size: 17px;
     padding: 6px 10px;
-    margin-inline-end: 5px;
+    margin-inline-start: 5px;
 }
 .btn a{
     text-decoration: none;
@@ -183,9 +183,6 @@ footer ul{
     .NomeApartamento{
         bottom: 25px;
     }
-    .tipoPost{
-        top: 30px;
-    }
     .name{
         margin: 30px 0px 15px 0px;
     }
@@ -195,14 +192,14 @@ footer ul{
     .apartment, .tipoPost, .likesAndResponses{
         font-size: 11px;
     }
+    .tipoPost{
+        right: 18px;
+    }
     .conteudo-container{
         font-size: 13px;
     }
     .conteudo-container p{
         margin-block-start: 0px;
-    }
-    footer{
-        margin: 0px 23px
     }
     .likesAndResponses{
         padding-right: 10px;

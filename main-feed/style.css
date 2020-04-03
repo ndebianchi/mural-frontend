@@ -75,6 +75,7 @@ body {
   background-color: white;
   color: #707070;
   border: none;
+  margin-left: 3%
 }
 
 
@@ -129,9 +130,7 @@ body {
 
 /* Main Section -- descartavel (mais ou menos) -- */
 #main {
-  padding: 20px;
   width: 100%;
-  margin-left: 0;
 }
 
 #div-logo {
