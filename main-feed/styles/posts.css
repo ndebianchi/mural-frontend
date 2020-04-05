@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
-*{
-    box-sizing: border-box;
-}
 
 /* Início posts */
 
@@ -14,7 +11,7 @@
     justify-content: center;
 }
 .card {
-    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #fbf1f5;
     width: 50vw;
 }
