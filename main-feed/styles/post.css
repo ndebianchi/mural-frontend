@@ -25,7 +25,7 @@ header {
 
 header .options {
     display: flex;
-
+    margin-top: 5px;
 }
 
 header .options a {
@@ -34,12 +34,14 @@ header .options a {
     background-color: #F70065;
     border-radius: 50%;
     display: flex;
-    margin: 10px;
-    padding: 10px;
+    margin: 8px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
 }
 
 header .options a img {
-    width: 25px;
+    width: 100%;
 }
 
 header .options a span {
@@ -49,6 +51,8 @@ header .options a span {
 header button.profile-icon {
     background: rgba(0, 0, 0, 0);
     border: 0;
+    margin: 2%;
+    outline: none;
 }
 
 header button.profile-icon img {
@@ -114,7 +118,7 @@ header button.profile-icon img {
 /* Conteúdo do card */
 
 main {
-    padding: 18px 0;
+    padding: 0 0 18px 0;
 }
 
 main .post-text {
@@ -182,4 +186,76 @@ footer .btn-group .btn-comment {
     font-weight: 500;
     padding: 5px 10px;
     text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    /* Extende altura da header e indica consideração aos elementos flutuantes */
+    header {
+        height: 125px;
+        overflow: hidden;
+    }
+    /* Amplia proporções e centraliza conteúdo */
+    header .options {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /* Configura estilo dos link's das opções */
+    header .options a {
+        padding: 12px 15px 12px 48px;
+        border-radius: 8px;
+        position: relative;
+        margin: 0 10px;
+        width: auto;
+    }
+    /* Configura imagem apresentada no botão da opção */
+    header .options a img {
+        position: absolute;
+        top: 8px;
+        left: 15px;
+        border-radius: 0;
+        width: auto;
+        height: 18px;
+        margin: 3px 2px 0 0;
+    }
+    /* Formata textos dos links */
+    header .options a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    /* Exibe labels dos botões do topo */
+    header .options a span {
+        display: block;
+    }
+    /* Fixa posição do botão do perfil no canto superior direito e o estiliza */
+    header button.profile-icon {
+        background-color: #77C9D4;
+        border-radius: 50%;
+        border: 0px;
+        width: 90px;
+        height: 90px;
+        margin: 20px;
+        padding: 0;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        outline: none;
+    }
+    /* Acrescenta efeito ao hover do perfil */
+    header button.profile-icon:hover {
+        border-radius: 50%;
+        filter: drop-shadow(0px 0px 2px #fb81b8);
+    }
+    header button.profile-icon img {
+        width: 90px;
+    }
+       /* Formata fonte das inciais quando não houver imagem de perfil */
+    header button.profile-icon span {
+        color: #FFFFFF;
+        font: Bold Condensed 50px/61px Roboto;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 }
