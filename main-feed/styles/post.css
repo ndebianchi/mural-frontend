@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import "reset.css";
+@import "header.css";
 
 * {
     box-sizing: border-box;
@@ -10,54 +11,6 @@ body {
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-div#mural {
-    display: block;
-}
-
-/* Header da página */
-
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-header .options {
-    display: flex;
-    margin-top: 5px;
-}
-
-header .options a {
-    align-items: center;
-    border: none;
-    background-color: #F70065;
-    border-radius: 50%;
-    display: flex;
-    margin: 8px;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-}
-
-header .options a img {
-    width: 100%;
-}
-
-header .options a span {
-    display: none;
-}
-
-header button.profile-icon {
-    background: rgba(0, 0, 0, 0);
-    border: 0;
-    margin: 2%;
-    outline: none;
-}
-
-header button.profile-icon img {
-    border-radius: 50%;
-    width: 50px;
 }
 
 /* Container dos cards */
@@ -117,15 +70,15 @@ header button.profile-icon img {
 
 /* Conteúdo do card */
 
-main {
-    padding: 0 0 18px 0;
+.card main {
+    padding: 18px 0;
 }
 
-main .post-text {
+.card main .post-text {
     font-size: 14px;
 }
 
-main img.post-img {
+.card main img.post-img {
     border-radius: 8px;
     margin: 10px 0;
     width: 100%;
@@ -133,27 +86,27 @@ main img.post-img {
 
 /* Footer do card */
 
-footer {
+.card footer {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-footer .post-info span {
+.card footer .post-info span {
     color: #999999;
     display: block;
     font-size: 14px;
 }
 
-footer .post-info span:first-child {
+.card footer .post-info span:first-child {
     padding-bottom: 3px;
 }
 
-footer .btn-group {
+.card footer .btn-group {
     display: flex;
 }
 
-footer .btn-group button {
+.card footer .btn-group button {
     align-items: center;
     border: none;
     background-color: #F70065;
@@ -166,11 +119,11 @@ footer .btn-group button {
     padding: 5px 10px;
 }
 
-footer .btn-group button img {
+.card footer .btn-group button img {
     padding-right: 4px;
 }
 
-footer .btn-group .btn-comment {
+.card footer .btn-group .btn-comment {
     margin-right: 8px;
 }
 
@@ -188,74 +141,11 @@ footer .btn-group .btn-comment {
     text-decoration: none;
 }
 
-@media screen and (min-width: 992px) {
-    /* Extende altura da header e indica consideração aos elementos flutuantes */
-    header {
-        height: 125px;
-        overflow: hidden;
-    }
-    /* Amplia proporções e centraliza conteúdo */
-    header .options {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media (min-width: 768px) {
 
-    }
-    /* Configura estilo dos link's das opções */
-    header .options a {
-        padding: 12px 15px 12px 48px;
-        border-radius: 8px;
-        position: relative;
-        margin: 0 10px;
-        width: auto;
-    }
-    /* Configura imagem apresentada no botão da opção */
-    header .options a img {
-        position: absolute;
-        top: 8px;
-        left: 15px;
-        border-radius: 0;
-        width: auto;
-        height: 18px;
-        margin: 3px 2px 0 0;
-    }
-    /* Formata textos dos links */
-    header .options a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    /* Exibe labels dos botões do topo */
-    header .options a span {
-        display: block;
-    }
-    /* Fixa posição do botão do perfil no canto superior direito e o estiliza */
-    header button.profile-icon {
-        background-color: #77C9D4;
-        border-radius: 50%;
-        border: 0px;
-        width: 90px;
-        height: 90px;
-        margin: 20px;
-        padding: 0;
-        position: fixed;
-        right: 0px;
-        top: 0px;
-        outline: none;
-    }
-    /* Acrescenta efeito ao hover do perfil */
-    header button.profile-icon:hover {
-        border-radius: 50%;
-        filter: drop-shadow(0px 0px 2px #fb81b8);
-    }
-    header button.profile-icon img {
-        width: 90px;
-    }
-       /* Formata fonte das inciais quando não houver imagem de perfil */
-    header button.profile-icon span {
-        color: #FFFFFF;
-        font: Bold Condensed 50px/61px Roboto;
-        font-size: 1.5em;
-        font-weight: bold;
+    /* FOOTER DO CARD */
+
+    .card header .post-type {
+        font-size: 15px;
     }
 }
