@@ -18,10 +18,6 @@
     width: 90%;
 }
 
-.carousel footer {
-    flex-direction: column;
-}
-
 .carousel footer .post-info {
     margin: 10px 0;
 }
