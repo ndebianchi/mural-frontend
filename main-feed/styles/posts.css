@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
-*{
+
+/* Configurações gerais */
+
+* {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Início posts */
@@ -13,47 +19,72 @@
     font-family: "Roboto", sans-serif;
     justify-content: center;
 }
+
 .card {
     margin-top: 20px;
     background-color: #fbf1f5;
     width: 50vw;
 }
 
+/* Carossel */
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel .card {
+    flex-shrink: 0;
+    margin: 20px 10px;
+    transition: .8s ease-in;
+    width: 80vw;
+}
+
 /* Cabeçalho de cada post */
 
-header{
+.card header {
     display: flex;
     justify-content: space-between;
 }
 
-.name-container{
+.card header .name-container {
     line-height: 2px;
     position: relative;
     right: 10px;
 }
 
-.name a{
+.card .name a {
     text-decoration: none;
     font-size: 20px;
     color: #F70065;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.name:hover{
+.card .name:hover {
     text-decoration: underline;
 }
 
-.fotoENome {
+.card .fotoENome {
     margin-block-end: 0px;
     padding-inline-start: 25px;
 }
 
-.fotoENome li{
+.card .fotoENome li {
     list-style: none;
     display: inline-block;
 }
 
-.NomeApartamento{
+.NomeApartamento {
     position: relative;
     bottom: 30px;
 }
@@ -64,7 +95,7 @@ header img {
     width: 70px;
 }
 
-.tipoPost{
+.tipoPost {
     position: relative;
     top: 30%;
     right: 30px;
@@ -72,21 +103,23 @@ header img {
 
 /* Textos post: Apartamento, Post, Likes e Respostas */
 
-.apartment, .tipoPost, .likesAndResponses{
+.apartment,
+.tipoPost,
+.likesAndResponses {
     font-size: 16px;
-    color:#6E6E6E;
-    font-family: "Roboto Condensed"
+    color: #6E6E6E;
+    font-family: "Roboto Condensed";
 }
 
 /* Conteúdo principal do post */
 
-.imagem-post{
+.imagem-post {
     display: flex;
     justify-content: center;
 }
 
-main img{
-    width: 90%; 
+main img {
+    width: 90%;
     margin-bottom: 8px;
 }
 
@@ -97,7 +130,7 @@ main img{
     justify-content: center;
 }
 
-.conteudo-container p{
+.conteudo-container p {
     width: 90%;
     margin-block-start: 4px;
 }
@@ -111,7 +144,7 @@ footer {
     margin: 0% 5%;
 }
 
-footer ul{
+footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -123,16 +156,17 @@ footer li {
     display: inline-block;
 }
 
-.likesAndResponses{
-    padding-right: 20px;  
+.likesAndResponses {
+    padding-right: 20px;
 }
-footer ul{
+
+footer ul {
     padding-inline-start: 0px;
 }
 
 /* Botões no post */
 
-.btn{
+.btn {
     font-family: "Roboto Condensed";
     background-color: #F70065;
     border-radius: 11px;
@@ -140,71 +174,90 @@ footer ul{
     padding: 6px 10px;
     margin-inline-start: 5px;
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     color: white;
 }
-.btn:hover{
+
+.btn:hover {
     text-decoration: underline;
 }
 
 /* Responsividade tela média */
 
-@media (min-width: 650px) and (max-width: 1200px){
-    .card{
+@media (min-width: 650px) and (max-width: 1200px) {
+    .card {
         width: 70vw;
     }
-    header img{
+
+    header img {
         width: 60px;
     }
-    .NomeApartamento{
+
+    .NomeApartamento {
         bottom: 25px;
     }
-    .name a{
+
+    .name a {
         font-size: 19px;
     }
-    .conteudo-container{
+
+    .conteudo-container {
         font-size: 15px;
     }
 }
 
 /* Responsividade tela pequena */
 
-@media (max-width: 650px){
-    .card{
+@media (max-width: 650px) {
+    .card {
         width: 93vw;
     }
-    header img{
+
+    header img {
         width: 50px;
     }
-    .name-container{
+
+    .name-container {
         right: 20px;
     }
-    .NomeApartamento{
+
+    .NomeApartamento {
         bottom: 25px;
     }
-    .name{
+
+    .name {
         margin: 30px 0px 15px 0px;
     }
-    .name a{
+
+    .name a {
         font-size: 16px;
     }
-    .apartment, .tipoPost, .likesAndResponses{
+
+    .apartment,
+    .tipoPost,
+    .likesAndResponses {
         font-size: 11px;
     }
-    .tipoPost{
+
+    .tipoPost {
         right: 18px;
     }
-    .conteudo-container{
+
+    .conteudo-container {
         font-size: 13px;
     }
-    .conteudo-container p{
+
+    .conteudo-container p {
         margin-block-start: 0px;
     }
-    .likesAndResponses{
+
+    .likesAndResponses {
         padding-right: 10px;
     }
-    .btn{
+
+    .btn {
         font-size: 12px;
         padding: 4px 10px;
     }

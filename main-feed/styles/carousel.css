@@ -1,0 +1,31 @@
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel .card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.carousel footer {
+    flex-direction: column;
+}
+
+.carousel footer .post-info {
+    margin: 10px 0;
+}
+
+.carousel footer .post-info span {
+    display: inline-block;
+}

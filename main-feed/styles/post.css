@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container dos cards */
+
+.feed {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Header do Card */
+
+.card {
+    padding: 24px;
+    background-color: #FBF1F5;
+    margin: 15px 10px;
+    border-radius: 8px;
+}
+
+.card header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card header .user-group {
+    align-items: center;
+    display: flex;
+}
+
+.card header .user-group img {
+    border-radius: 50%;
+    width: 54px;
+}
+
+.card header .user-group .user-info {
+    margin-left: 15px;
+}
+
+.card header .user-group .user-info p {
+    color: #F70065;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card header .user-group .user-info span {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.card header .post-type {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Conteúdo do card */
+
+main {
+    padding: 18px 0;
+}
+
+main .post-text {
+    font-size: 14px;
+}
+
+main img {
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Footer do card */
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .post-info span {
+    color: #999999;
+    display: block;
+    font-size: 14px;
+}
+
+footer .post-info span:first-child {
+    padding-bottom: 3px;
+}
+
+footer .btn-group {
+    display: flex;
+}
+
+footer .btn-group button {
+    align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+footer .btn-group button img {
+    padding-right: 4px;
+}
+
+footer .btn-group .btn-comment {
+    margin-right: 8px;
+}
