@@ -12,6 +12,50 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+div#mural {
+    display: block;
+}
+
+/* Header da página */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .options {
+    display: flex;
+
+}
+
+header .options a {
+    align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 50%;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+header .options a img {
+    width: 25px;
+}
+
+header .options a span {
+    display: none;
+}
+
+header button.profile-icon {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+header button.profile-icon img {
+    border-radius: 50%;
+    width: 50px;
+}
+
 /* Container dos cards */
 
 .feed {
@@ -77,7 +121,7 @@ main .post-text {
     font-size: 14px;
 }
 
-main img {
+main img.post-img {
     border-radius: 8px;
     margin: 10px 0;
     width: 100%;
@@ -124,4 +168,18 @@ footer .btn-group button img {
 
 footer .btn-group .btn-comment {
     margin-right: 8px;
+}
+
+.btn {
+    align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-decoration: none;
 }
