@@ -1,23 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
-@import "reset.css";
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-div#mural {
-    display: block;
-}
-
 /* Header da página */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +43,7 @@ header button.profile-icon img {
 
 /* Container dos cards */
 
-.feed {
+main .feed {
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
@@ -117,15 +98,15 @@ header button.profile-icon img {
 
 /* Conteúdo do card */
 
-main {
+.card main {
     padding: 0 0 18px 0;
 }
 
-main .post-text {
+.card main .post-text {
     font-size: 14px;
 }
 
-main img.post-img {
+.card main img.post-img {
     border-radius: 8px;
     margin: 10px 0;
     width: 100%;
@@ -133,27 +114,27 @@ main img.post-img {
 
 /* Footer do card */
 
-footer {
+.card footer {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-footer .post-info span {
+.card footer .post-info span {
     color: #999999;
     display: block;
     font-size: 14px;
 }
 
-footer .post-info span:first-child {
+.card footer .post-info span:first-child {
     padding-bottom: 3px;
 }
 
-footer .btn-group {
+.card footer .btn-group {
     display: flex;
 }
 
-footer .btn-group button {
+.card footer .btn-group button {
     align-items: center;
     border: none;
     background-color: #F70065;
@@ -166,29 +147,45 @@ footer .btn-group button {
     padding: 5px 10px;
 }
 
-footer .btn-group button img {
+.card footer .btn-group button img {
     padding-right: 4px;
 }
 
-footer .btn-group .btn-comment {
+.card footer .btn-group .btn-comment {
     margin-right: 8px;
 }
 
-.btn {
-    align-items: center;
-    border: none;
-    background-color: #F70065;
-    border-radius: 8px;
-    color: #FFF;
-    cursor: pointer;
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 10px;
-    text-decoration: none;
-}
+
+/* *********** */
+/* MEDIA QUERY */
+/* *********** */
 
 @media screen and (min-width: 992px) {
+
+      /* ________   */
+     /* { NAVBAR } */
+    /*            */
+
+    /* esconde nav-mobile e sanduiche */
+    .sidebarMobile { display: none; }  
+    .openbtn { display: none; }
+
+    /* mostra nav-desktop */
+    .sidebarDesktop { display: block; }
+    .sidebarDesktop div {display: block;}
+    .sidebarDesktop div a { display: inline-block; }
+
+    /* aplica margem */
+    #main { margin-left: 300px; }
+
+    /* muda cor da linha do logo na nav */
+    #logo-nav { border-bottom: #F70065 solid 2px; }  
+
+
+      /* _______________   */
+     /* { HEADER POST'S } */
+    /*                   */
+
     /* Extende altura da header e indica consideração aos elementos flutuantes */
     header {
         height: 125px;
@@ -248,14 +245,19 @@ footer .btn-group .btn-comment {
         border-radius: 50%;
         filter: drop-shadow(0px 0px 2px #fb81b8);
     }
+    /* Altera proporções da imagem do profile */
     header button.profile-icon img {
         width: 90px;
     }
-       /* Formata fonte das inciais quando não houver imagem de perfil */
+    /* Formata fonte das inciais quando não houver imagem de perfil */
     header button.profile-icon span {
         color: #FFFFFF;
         font: Bold Condensed 50px/61px Roboto;
         font-size: 1.5em;
         font-weight: bold;
     }
+
+     /* : : : : : : : : : : : : : : : : : : : : : : : : : : */
+    /* : : : : : : : { AJUSTES PARA DESKTOP } : : : : : : : */
+
 }
