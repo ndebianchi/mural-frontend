@@ -15,7 +15,7 @@ body {
 
 /* Container dos cards */
 
-.feed {
+main .feed {
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
@@ -127,19 +127,9 @@ body {
     margin-right: 8px;
 }
 
-.btn {
-    align-items: center;
-    border: none;
-    background-color: #F70065;
-    border-radius: 8px;
-    color: #FFF;
-    cursor: pointer;
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 10px;
-    text-decoration: none;
-}
+/* *********** */
+/* MEDIA QUERY */
+/* *********** */
 
 @media (min-width: 768px) {
 
