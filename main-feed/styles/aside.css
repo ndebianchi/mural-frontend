@@ -125,12 +125,16 @@
         display: block;
     }
 
+    .sidebarDesktop a img {
+        width: 30px;
+    }
+
     .sidebarDesktop div {
         display: block;
     }
 
     .sidebarDesktop div a {
-        display: inline-block;
+        display: flex;
     }
 
     body {
