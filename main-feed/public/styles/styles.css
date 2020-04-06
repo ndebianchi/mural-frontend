@@ -6,6 +6,7 @@
 @import "carousel.css";
 @import "post.css";
 @import "aside.css";
+@import "modal.css";
 
 * {
     box-sizing: border-box;

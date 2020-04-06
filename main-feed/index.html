@@ -13,6 +13,9 @@
 <body>
     <!-- DIV PAI DE TODAS -->
     <div class="container">
+        <!-- Fundo escuro do modal -->
+        <div id="background-modal" onclick="toggleBackgroundModal()"></div>
+
         <!-- Nav Mobile  -->
         <div id="mobileSidebar" class="sidebarMobile">
             <a href="javascript:javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -59,26 +62,54 @@
 
         <div class="feed-container">
             <header>
-                <button class="menu-btn" onclick="openNav()"><img src="./img/icones-mural/Cinza/menu.svg"
-                        alt="Icone do menu"></button>
+                <button class="menu-btn" onclick="openNav()">
+                    <img src="./img/icones-mural/Cinza/menu.svg" alt="Icone do menu">
+                </button>
 
                 <div class="options">
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="openModal('Novo Post')">
                         <img src="img/icones-mural/Branco/post.svg" alt="Novo Post">
                         <span>Novo Post</span>
                     </a>
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="openModal('Filtros')">
                         <img src="img/icones-mural/Branco/filtro.svg" alt="Filtros">
                         <span>Filtros</span>
                     </a>
-                    <a href="#">
+                    <a href="javascript:void(0)" onclick="openModal('Nova Ocorrência')">
                         <img src="img/icones-mural/Branco/ocorrencias.svg" alt="Nova Ocorrência">
                         <span>Nova Ocorrência</span>
                     </a>
+                    <a href="javascript:void(0)" onclick="openModal('Novo Aviso')">
+                        <img src="img/icones-mural/Branco/avisos.svg" alt="Novo Aviso">
+                        <span>Novo Aviso</span>
+                    </a>
                 </div>
 
-                <button class="profile-icon"><img src="./img/posts-mural/hendy-almeida.jpg"
-                        alt="Imagem de perfil"></button>
+                <button class="profile-icon" onclick="profileDropdown()">
+                    <img src="./img/posts-mural/hendy-almeida.jpg" alt="Imagem de perfil">
+                </button>
+                <div id="profile-dropdown" class="modal">
+                    <div class="profile-content">
+                        <header>
+                            <div class="user-group">
+                                <img src="img/posts-mural/hendy-almeida.jpg" alt="Imagem de perfil">
+                                <div class="user-info">
+                                    <p>Hendy Almeida</p>
+                                    <span>Apartamento 1</span>
+                                </div>
+                            </div>
+                        </header>
+                        <main>
+                            <nav>
+                                <a href="javascript:void(0)">Configurações</a>
+                            </nav>
+                        </main>
+                        <footer>
+                            <hr>
+                            <a href="javascript:void(0)">Sair</a>
+                        </footer>
+                    </div>
+                </div>
             </header>
 
 
@@ -318,7 +349,9 @@
 
             </main>
         </div>
-    </div>
+
+        <!-- Modais -->
+        <div id="open-modal" class="modal"></div>
     </div>
 </body>
 </html>
