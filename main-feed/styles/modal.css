@@ -1,0 +1,145 @@
+#background-modal {
+    background-color: black;
+    filter: opacity(0.3);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+
+    webkit-animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s;
+    -ms-animation: fadein 0.5s;
+    -o-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+.modal {
+    border: 1px solid #B8B8B9;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 3px 12px #00000057;
+    padding: 5px;
+    margin: 0;
+    z-index: 1001;
+
+    webkit-animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s;
+    -ms-animation: fadein 0.5s;
+    -o-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } } /* Safari, Chrome and Opera > 12.1 */
+@-moz-keyframes    fadein { from { opacity: 0; } to { opacity: 1; } } /* Firefox < 16 */
+@-ms-keyframes     fadein { from { opacity: 0; } to { opacity: 1; } } /* Internet Explorer */
+@-o-keyframes      fadein { from { opacity: 0; } to { opacity: 1; } } /* Opera < 12.1 */
+@keyframes         fadein { from { opacity: 0; } to { opacity: 1; } } /* Geral */
+
+#profile-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 6%;
+
+    width:50vw;
+    height: auto;
+    min-height: 50px;
+
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+#profile-dropdown .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#profile-dropdown .profile-content header {
+    width: 100%;
+}
+
+#profile-dropdown .profile-content .user-group {
+    align-items: center;
+    display: flex;
+}
+
+#profile-dropdown .profile-content .user-group img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+#profile-dropdown .profile-content .user-group .user-info {
+    margin: 10px;
+}
+
+#profile-dropdown .profile-content .user-group .user-info p {
+    color: #F70065;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#profile-dropdown .profile-content .user-group .user-info span {
+    color: #999999;
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+#profile-dropdown .profile-content main {
+    padding: 5px 18px;
+    width: 100%;
+}
+
+#profile-dropdown .profile-content main nav a {
+    color: #707070;
+    font: Condensed 14px/17px Roboto;
+    text-decoration: none;
+}
+
+/* Footer do card */
+
+#profile-dropdown .profile-content footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+#profile-dropdown .profile-content footer hr {
+    border: 0;
+    border-radius: 10px;
+    background-color: #F70065;
+    padding: 1.5px;
+    margin: 2px auto;
+    width: 80%;
+}
+
+#profile-dropdown .profile-content footer a {
+    color: #707070;
+    display: block;
+    padding: 18px;
+    font: Bold Condensed 16px/19px Roboto;
+    text-decoration: none;
+}
+
+#open-modal {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+
+    width:90vw;
+    height: auto;
+    min-height: 50px;
+    padding: 15px;
+
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+#open-modal h1 {
+    color: #707070;
+    font: Bold Condensed 26px/32px Roboto;
+}
+
