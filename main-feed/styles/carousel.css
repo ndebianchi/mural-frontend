@@ -1,9 +1,19 @@
-.carousel {
+.carousel-wrapper {
     display: flex;
-    overflow-x: scroll;
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.carousel-wrapper .next-wrapper,
+.carousel-wrapper .previous-wrapper {
+    display: none;
 }
 
 .carousel::-webkit-scrollbar {
@@ -15,7 +25,7 @@
     flex-direction: column;
     flex-shrink: 0;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
 }
 
 .carousel footer .post-info {
@@ -24,4 +34,15 @@
 
 .carousel footer .post-info span {
     display: inline-block;
+}
+
+@media (min-width: 992px) {
+    .carousel-wrapper .next-wrapper,
+    .carousel-wrapper .previous-wrapper {
+        display: flex;
+    }
+
+    .carousel .card {
+        width: 95%;
+    }
 }
