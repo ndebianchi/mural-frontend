@@ -15,7 +15,7 @@ header .menu-btn img {
 
 header .options {
     display: flex;
-    align-items: center;
+    margin-top: 5px;
 }
 
 header .options a {
@@ -24,13 +24,14 @@ header .options a {
     background-color: #F70065;
     border-radius: 50%;
     display: flex;
-    margin: 10px;
-    padding: 10px;
-    height: 45px;
+    margin: 8px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
 }
 
 header .options a img {
-    width: 25px;
+    width: 100%;
 }
 
 header .options a span {
@@ -40,6 +41,7 @@ header .options a span {
 header button.profile-icon {
     background: rgba(0, 0, 0, 0);
     border: 0;
+    margin: 2%;
     outline: none;
 }
 

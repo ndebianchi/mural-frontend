@@ -18,6 +18,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.btn {
+    align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+  
 @media (min-width: 992px) {
     body {
         overflow: hidden;
