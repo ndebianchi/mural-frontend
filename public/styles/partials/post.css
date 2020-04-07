@@ -2,7 +2,7 @@
 
 main .feed {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -61,6 +61,7 @@ main .feed {
 
 .card main .post-text {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .card main img.post-img {

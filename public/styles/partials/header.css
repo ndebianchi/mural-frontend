@@ -1,4 +1,5 @@
 header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -15,7 +16,6 @@ header .menu-btn img {
 
 header .options {
     display: flex;
-    margin-top: 5px;
 }
 
 header .options a {
@@ -24,14 +24,13 @@ header .options a {
     background-color: #F70065;
     border-radius: 50%;
     display: flex;
-    margin: 8px;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    height: 45px;
 }
 
 header .options a img {
-    width: 100%;
+    width: 25px;
 }
 
 header .options a span {
@@ -41,8 +40,6 @@ header .options a span {
 header button.profile-icon {
     background: rgba(0, 0, 0, 0);
     border: 0;
-    margin: 2%;
-    outline: none;
 }
 
 header button.profile-icon img {
@@ -59,16 +56,8 @@ header button.profile-icon img {
 
     header .options a {
         align-items: center;
-        border-radius: 8px;
         display: flex;
         text-decoration: none;
-    }
-
-    header .options a span {
-        color: #fff;
-        display: block;
-        font-weight: bold;
-        padding-left: 10px;
     }
 
     header button.profile-icon img {
@@ -81,5 +70,16 @@ header button.profile-icon img {
     header .menu-btn {
         cursor: default;
         opacity: 0;
+    }
+
+    header .options a {
+        border-radius: 8px;
+    }
+
+    header .options a span {
+        color: #fff;
+        display: block;
+        font-weight: bold;
+        padding-left: 10px;
     }
 }
