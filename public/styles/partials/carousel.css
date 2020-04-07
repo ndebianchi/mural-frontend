@@ -1,7 +1,7 @@
 .carousel-wrapper {
     display: flex;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -28,6 +28,10 @@
     width: 85%;
 }
 
+.carousel main .post-text {
+    line-height: 20px;
+}
+
 .carousel footer .post-info {
     margin: 10px 0;
 }
@@ -39,7 +43,16 @@
 @media (min-width: 992px) {
     .carousel-wrapper .next-wrapper,
     .carousel-wrapper .previous-wrapper {
+        align-items: center;
+        justify-content: center;
         display: flex;
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .carousel-wrapper .next-wrapper img,
+    .carousel-wrapper .previous-wrapper img {
+        width: 35px;
     }
 
     .carousel .card {
