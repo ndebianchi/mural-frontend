@@ -46,7 +46,7 @@ function toggleBackgroundModal(modal = false) {
 
 function profileDropdown() {
   // Habilita visualização do background do modal
-  toggleBackgroundModal('profile-dropdown');
+  // toggleBackgroundModal('profile-dropdown'); (DESATIVADO)
 
   // Verifica se "profile-dropdown" está oculto.
   //  - Se sim: exiba.
