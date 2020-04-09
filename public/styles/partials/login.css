@@ -16,6 +16,7 @@ body {
     text-align: center;
     font-family: "Roboto", sans-serif;
     width: 100%;
+    height: 100%;
 }
 
 #main div {
@@ -30,9 +31,9 @@ body {
 
 .logo {
     width: 70%;
-    max-width: 400px;
+    max-width: 300px;
     padding: 30px;    
-    margin: 0 auto 60px!important;
+    margin: 0 auto 50px!important;
     border-bottom: solid #F70065 2px;    
 }
 
@@ -40,6 +41,7 @@ body {
 .login {
     display: block;
     width: 100%;
+    margin-bottom: 10%;
 }
 
 .login div label {
@@ -56,8 +58,7 @@ body {
 }
 
 .login div button {
-    margin-top: 30px;
-    margin-bottom: 120px;
+    margin-top: 30px;    
     background-color: white;
     color: #707070;
     text-decoration: none;
