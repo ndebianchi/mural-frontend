@@ -8,6 +8,8 @@
 @import "./partials/aside.css";
 @import "./partials/modal.css";
 @import "./partials/enquetes.css";
+@import "./partials/settings.css";
+@import "./partials/toggle-switch.css";
 
 * {
     box-sizing: border-box;

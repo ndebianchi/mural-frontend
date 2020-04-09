@@ -84,3 +84,16 @@ function openModal(texto) {
   }
 }
 
+/* _____________________________________________________________
+Mostrar Senha: Muda o tipo dentro do input de "password" para "text"
+*/
+
+function mostrarSenha() {
+  var x = document.getElementById("senha");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
