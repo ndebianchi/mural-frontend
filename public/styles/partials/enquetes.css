@@ -1,0 +1,60 @@
+.enquete header .user-info{
+    display: flex;
+    align-items: flex-start;
+}
+
+.enquete header li{
+    text-align: right;
+}
+
+.enquete header .enquete-date{
+    font-size: 12px;
+    color: #707070;
+    font: Roboto;
+    margin-top: 5px;
+}
+
+.enquete header .vigor{
+    color: #F70065;
+}
+.enquete main .post-text{
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.enquete main .dados-enquete{
+     background-color: #fbf1f5;
+     border-radius: 11px;
+     margin-top: 10px;
+ }
+ .enquete main .dados-enquete input[type=radio] {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    float: left;
+    margin-right:10px;
+}
+.enquete main .dados-enquete label{
+    font-size: 14px;
+    text-align: left;
+    color: black;
+    line-height: normal;
+}
+ .enquete main .dados-enquete .valor-enquete{
+    max-width: 500px;
+    background: #F70065;
+     border-radius: 11px; 
+     color: white;
+     text-align: right;
+     padding-right: 10px;
+     font-size: 16px;
+ }
+ .enquete main .barra-container{
+     margin-left: 35px;
+     margin-top: 8px;
+     margin-bottom: 8px;
+ }
+ .enquete footer{
+     display: flex;
+    justify-content: flex-end;
+ }
