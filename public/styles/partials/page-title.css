@@ -11,8 +11,9 @@
 }
 
 .page-title img{
-    width: auto;
+    width: 1.2em;
 }
+
 .page-title span{
     margin-left: 10px;
     font-size: 20px;
