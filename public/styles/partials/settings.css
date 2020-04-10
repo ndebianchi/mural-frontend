@@ -2,8 +2,10 @@
   box-sizing: border-box;
 }
 
-.settings {
+main .settings {
+  margin: 0 auto;
   max-width: 800px;
+  width: 100%;
 }
 
 /* DIV 1 - PROFILE-PIC */

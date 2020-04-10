@@ -57,33 +57,26 @@
             </div>
         </div>
 
-        <!-- Header com os botões de chamada dos modais e demais -->
+        <!-- Main Content -->
 
         <div class="feed-container">
+
+            <!-- Header com Nav, Hendy e Titulo -->
             <header>
+                <!-- Botão Nav-Mobile -->
                 <button class="menu-btn" onclick="openNav()">
                     <img src="./public/img/icones-mural/Cinza/menu.svg" alt="Icone do menu">
                 </button>
 
-                <div class="options">
-                    <a href="javascript:void(0)" onclick="openModal('Novo Post')">
-                        <img src="./public/img/icones-mural/Branco/post.svg" alt="Novo Post">
-                        <span>Novo Post</span>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openModal('Filtros')">
-                        <img src="./public/img/icones-mural/Branco/filtro.svg" alt="Filtros">
-                        <span>Filtros</span>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openModal('Nova Ocorrência')">
-                        <img src="./public/img/icones-mural/Branco/ocorrencias.svg" alt="Nova Ocorrência">
-                        <span>Nova Ocorrência</span>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openModal('Novo Aviso')">
-                        <img src="./public/img/icones-mural/Branco/avisos.svg" alt="Novo Aviso">
-                        <span>Novo Aviso</span>
-                    </a>
+                <!-- Icone + Titulo da Pagina -->
+                <div class="page-title-box">
+                    <div class="page-title">
+                        <img src="./public/img/icones-mural/Cinza/settings.svg" alt="Novo Post">
+                        <span>Configurações</span>
+                    </div>                    
                 </div>
 
+                <!-- Hendy -->
                 <button class="profile-icon" onclick="profileDropdown()">
                     <img src="./public/img/posts-mural/hendy-almeida.jpg" alt="Imagem de perfil">
                 </button>
@@ -112,10 +105,13 @@
 
 
             <!-- Conteudo Principal -->
-            <main>
+            <main>                
+            <section class="settings">
+
+                <!-- Divisóaria (parte do Titulo) -->
+                <div class="page-title-linha"></div>
 
                 <!-- Configurações -->
-            <section class="settings">
                 <div class="profile-pic">
                     <div>
                         <img src="public/img/posts-mural/mulher-idosa-chapeuVermelho.jpg" alt="">
