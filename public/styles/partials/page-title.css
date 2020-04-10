@@ -11,12 +11,12 @@
 }
 
 .page-title img{
-    width: 1.2em;
+    width: 1.5em;
 }
 
 .page-title span{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 25px;
     color: #707070;
     font-family: Roboto Condensed;
     font-weight: bold;
@@ -27,8 +27,16 @@
     display: flex;    
     padding: 2px;
     border-bottom: solid 2px #F70065;
-    margin: 0 auto;
+    margin: 0 auto;     
     width: 90%;    
+}
+
+/* Classe específica para páginas com select-box */
+.page-title-linha-box{
+    margin: 0px 10%;
+    display: flex;    
+    padding: 2px;
+    border-bottom: solid 2px #F70065;
 }
 
 /* MEDIA QUERY */
