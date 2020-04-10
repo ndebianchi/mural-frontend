@@ -5,21 +5,7 @@ Cabeçalho página
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid #F70065;
-    margin: 10px 10% 25px;
-}
-
-.title-pages-btn button{
-    align-items: center;
-    border: none;
-    background-color: #F70065;
-    border-radius: 8px;
-    color: #FFF;
-    cursor: pointer;
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 3px;
-    height: 40px;
+    margin: 10px 10% 20px;
 }
 
 .title-pages{
@@ -49,11 +35,30 @@ Começo do selecionar período
 .feed-container .escolha-periodo{
     display: flex;
     align-items: center;
-    margin: 0px 10%
+    flex-wrap: wrap;
 }
 .feed-container .escolha-periodo .periodo-text{
    font-size: 17px;
    margin: 0px 10px;
+}
+
+.cabecalho-periodo{
+    margin: 0px 10% 20px;
+}
+
+.cabecalho-periodo button{
+    align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 3px;
+    height: 40px;
+    margin: 15px
 }
 
 
@@ -66,7 +71,7 @@ Aqui começa o select-box (texto importado)
    position: relative;
    font-family: Roboto Condensed;
    font-size: 17px;
-   min-width: 115px;
+   /* max-width: 110px; */
  }
  
  .custom-select select {
@@ -231,5 +236,19 @@ Media
     .feed-container .escolha-periodo .periodo-text{
         font-size: 14px;
         margin: 0px 7px;
-     }
+    }
+}
+@media(max-width: 770px){
+    .custom-select{
+        max-width: 110px;
+    }
+}
+@media (max-width: 640px){
+    .cabecalho-periodo{
+        border-bottom: 5px solid #F70065;
+    }
+    .feed-container .escolha-periodo{
+        justify-content: center;
+    }
+    
 }
