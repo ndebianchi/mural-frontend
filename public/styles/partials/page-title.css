@@ -16,7 +16,7 @@
 
 .page-title span{
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 23px;
     color: #707070;
     font-family: Roboto Condensed;
     font-weight: bold;
@@ -49,5 +49,6 @@
     .page-title img{
         width: 2.5em;
     }
+
 }
 

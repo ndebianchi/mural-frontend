@@ -8,7 +8,7 @@
     <script defer src="./public/js/carousel.js"></script>
     <script defer src="./public/js/select-box.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
-    <title>Enquetes</title>
+    <title>Achados e Perdidos</title>
 </head>
 
 <body>
@@ -72,8 +72,8 @@
                 <!-- Icone + Titulo da Pagina -->
                 <div class="page-title-box">
                     <div class="page-title">
-                        <img src="./public/img/icones-mural/Cinza/enquete.svg" alt="Novo Post">
-                        <span>Enquetes</span>
+                        <img src="./public/img/icones-mural/Cinza/achados3.svg" alt="Novo Post">
+                        <span>Achados e Perdidos</span>
                     </div>                    
                 </div>
 
@@ -104,18 +104,10 @@
                 </div>
             </header>
 
-            <!-- <div class="title-pages-btn">
-                <div class="title-pages">
-                    <img src="./public/img/icones-mural/Cinza/enquete.svg" alt="Novo Post">
-                    <span>Enquetes</span>
-                </div>
-                
-            </div> -->
-
             <!-- Divisória (parte do Titulo) -->
             <div class="page-title-linha-box"></div>
 
-            <!-- Enquetes -->
+            <!-- Selecionar período -->
             <div class="cabecalho-periodo">
                 <div class="escolha-periodo">
                     <div class="periodo-text">
@@ -158,149 +150,114 @@
                             <option value="12">Dez/2020</option>
                         </select>
                     </div> 
-                    <button class="btn-group">Nova Enquete</button>  
+                    <button class="btn-group">Novo objeto</button>  
                 </div>
             </div>
             <!-- Conteudo Principal -->
             <main>
                 <!-- Feed Principal -->
                 <section class="lista-enquetes">
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Achados e Perdidos</p>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date vigor">expira em 04/06/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">20/04/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Estamos avaliando a possibilidade de contratação de um personal trainer para os moradores do nosso condomínio. Você teria interesse?
+                                Prezados, informo que estas chaves foram encontradas no estacionamento ontem pela manhã.
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete1" id="opcao-enquete" value="opcao"><label for="opcao">Sim</label>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete1" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                            </div>
+                            <img class="post-img" src="./public/img/posts-mural/chaves.jpg" alt="">
                         </main>
                         <footer>
-                            <div class="btn-group">
-                                <button class="btn-comment">Resultado parcial</button>
-                                <button class="btn-like">Votar</button>
-                            </div>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Azul/circle.svg" alt=""></li>
+                                <li id="ocurr-análise">Perdido</lin>
+                            </ul>
                         </footer>
                     </div>
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Achados e Perdidos</p>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">08/03/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Recebemos algumas mensagens para criarmos uma horta comunitária. Você teria interesse?
+                                Esta bolsa foi localizada ontem, por volta das 15h, em região próxima à academia.
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete4" id="opcao-enquete" value="opcao"><label for="opcao">Sim</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:80%">80%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete4" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:20%">20%</div>
-                                </div>
-                            </div>
+                            <img class="post-img" src="./public/img/posts-mural/bolsa.jpg" alt="">
                         </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Devolvido</lin>
+                            </ul>
+                        </footer>
                     </div>
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Achados e Perdidos</p>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">08/03/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Você gostaria de uma feirinha no condomínio? Desse modo, evitariamos aglomerações externas durante a quarentena.
+                                Esta carteira foi encontrada no Hall hoje de manhã. Ela contém documento de identificação. 
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Sim, em fins de semana</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:40%">40%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Sim, em dias de semana </label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:30%">30%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:30%">30%</div>
-                                </div>
-                            </div>
+                            <img class="post-img" src="./public/img/posts-mural/carteira.jpg" alt="">
                         </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Devolvido</lin>
+                            </ul>
+                        </footer>
                     </div>
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Achados e Perdidos</p>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">08/03/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Vamos reformar a Brinquedoteca e temos 3 sugestões de cores. Qual você prefere?
+                                A camêra abaixo foi vista em região próxima ao jardim. Notamos ausência de bateria no momento em que foi encontrada.
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Rosa</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:22%">23%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Verde</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:50%">50%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Azul</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:25%">27%</div>
-                                </div>
-                            </div>
+                            <img class="post-img" src="./public/img/posts-mural/camera.jpg" alt="">
                         </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Devolvido</lin>
+                            </ul>
+                        </footer>
                     </div>
+                    
                 </section>
 
             </main>
