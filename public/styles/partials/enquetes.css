@@ -9,7 +9,7 @@ Começo do selecionar período
 }
 .feed-container .escolha-periodo .periodo-text{
    font-size: 17px;
-   margin: 0px 10px;
+   /* margin: 0px 10px; */
 }
 
 .cabecalho-periodo{
@@ -28,7 +28,7 @@ Começo do selecionar período
     font-weight: 500;
     padding: 5px 3px;
     height: 40px;
-    margin: 15px
+    margin-left: 10px;
 }
 
 .title-pages-btn{
@@ -36,6 +36,10 @@ Começo do selecionar período
     justify-content: space-between;
     border-bottom: 2px solid #F70065;
     margin: 10px 10% 20px;
+}
+
+#select-tempo{
+    margin: 15px 10px;
 }
 
 /* **************
@@ -48,6 +52,7 @@ Aqui começa o select-box (texto importado)
    font-family: Roboto Condensed;
    font-size: 17px;
    max-width: 180px;
+   margin: 0px 10px;
  }
  
  .custom-select select {
@@ -121,8 +126,10 @@ Container geral das enquetes
 /* **********
 Card de enquetes
 ************* */
-
 .enquete{
+    margin: 8px 10px;
+}
+.enquete, .ocorr{
     max-width: 476px;
 }
 .enquete header .user-info{
@@ -130,11 +137,11 @@ Card de enquetes
     align-items: flex-start;
 }
 
-.enquete header li{
+.lista-enquetes header li{
     text-align: right;
 }
 
-.enquete header .enquete-date{
+.lista-enquetes header .enquete-date{
     font-size: 12px;
     color: #707070;
     font: Roboto;
@@ -192,8 +199,13 @@ Card de enquetes
 Media 
 ************** */
 @media (max-width: 1241px){
-    .enquete{
+    .enquete, .ocorr{
         max-width: 650px;
+    }
+}
+@media (max-width: 1187px){
+    .custom-select{
+        max-width: 125px;
     }
 }
 @media (max-width: 992px){
@@ -214,11 +226,12 @@ Media
 }
 @media(max-width: 770px){
     .custom-select{
-        max-width: 110px;
+        max-width: 95px;
     }
 }
 @media (max-width: 640px){
     .cabecalho-periodo{
+        padding-bottom: 10px;
         border-bottom: 2px solid #F70065;
     }
     .feed-container .escolha-periodo{
@@ -227,7 +240,7 @@ Media
     
 }
 @media (max-width: 511px){
-    .cabecalho-periodo{
+    /* .cabecalho-periodo{
         margin: 20px 10% 10px;
-    }
+    } */
 }

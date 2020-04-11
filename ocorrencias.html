@@ -8,7 +8,7 @@
     <script defer src="./public/js/carousel.js"></script>
     <script defer src="./public/js/select-box.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
-    <title>Enquetes</title>
+    <title>Ocorrências</title>
 </head>
 
 <body>
@@ -72,8 +72,8 @@
                 <!-- Icone + Titulo da Pagina -->
                 <div class="page-title-box">
                     <div class="page-title">
-                        <img src="./public/img/icones-mural/Cinza/enquete.svg" alt="Novo Post">
-                        <span>Enquetes</span>
+                        <img src="./public/img/icones-mural/Cinza/ocorrencias.svg" alt="Novo Post">
+                        <span>Ocorrências</span>
                     </div>                    
                 </div>
 
@@ -104,18 +104,10 @@
                 </div>
             </header>
 
-            <!-- <div class="title-pages-btn">
-                <div class="title-pages">
-                    <img src="./public/img/icones-mural/Cinza/enquete.svg" alt="Novo Post">
-                    <span>Enquetes</span>
-                </div>
-                
-            </div> -->
-
             <!-- Divisória (parte do Titulo) -->
             <div class="page-title-linha-box"></div>
 
-            <!-- Enquetes -->
+            <!-- Selecionar período -->
             <div class="cabecalho-periodo">
                 <div class="escolha-periodo">
                     <div class="periodo-text">
@@ -158,149 +150,139 @@
                             <option value="12">Dez/2020</option>
                         </select>
                     </div> 
-                    <button class="btn-group">Nova Enquete</button>  
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                        <option value="0">Mostrar</option>
+                        <option value="1">Todas</option>
+                        <option value="2">Respondidas</option>
+                        <option value="3">Em análise</option>
+                        </select>
+                    </div>
+                    <button class="btn-group">Gerar relatório</button>  
                 </div>
             </div>
             <!-- Conteudo Principal -->
             <main>
                 <!-- Feed Principal -->
                 <section class="lista-enquetes">
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
+                                <img src="./public/img/posts-mural/mulher-idosa-chapeuVermelho.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Maria da Silva</p>
+                                    <span>Apartamento 212</span>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date vigor">expira em 04/06/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">20/04/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Estamos avaliando a possibilidade de contratação de um personal trainer para os moradores do nosso condomínio. Você teria interesse?
+                                Prezados, informo que a luz do corredor do 2º andar está queimada. No aguardo de providências.
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete1" id="opcao-enquete" value="opcao"><label for="opcao">Sim</label>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete1" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                            </div>
                         </main>
                         <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Azul/circle.svg" alt=""></li>
+                                <li id="ocurr-análise">Em Análise</lin>
+                            </ul>
+                        </footer>
+                    </div>
+                    <div class="card ocorr">
+                        <header>
+                            <div class="user-group">
+                                <img src="./public/img/posts-mural/homem-jovem-chapeu.jpg">
+                                <div class="user-info">
+                                    <p>José Dirceu</p>
+                                    <span>Apartamento 81</span>
+                                </div>
+                            </div>
+                            <ol>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">08/03/2020</li>
+                            </ol>
+                        </header>
+                        <main>
+                            <p class="post-text">
+                                Hoje pela manhã, desci até a garagem e o vidro lateral do meu carro estava quebrado. Exijo providências do condomínio!
+                            </p>
+                        </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Respondido</lin>
+                            </ul>
                             <div class="btn-group">
-                                <button class="btn-comment">Resultado parcial</button>
-                                <button class="btn-like">Votar</button>
+                                <button class="btn-comment">Ver resposta</button>
+                                
                             </div>
                         </footer>
                     </div>
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
+                                <img src="./public/img/posts-mural/mulher-idosa-floral.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Silvana Aparecida</p>
+                                    <span>Apartamento 223</span>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">06/02/2020</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Recebemos algumas mensagens para criarmos uma horta comunitária. Você teria interesse?
+                                Na noite de ontem não consegui dormir devido à festa que a vizinha do 207 estava fazendo. Interfonei na portaria para que algo fosse feito. Nada aconteceu. Fui pessoalmente até o apartamento pedir a compreensão do vizinho, especialmente porque era quinta-feira e todo mundo trabalha ou estuda na sexta-feira logo cedo. Novamente, pedido ignorado. 
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete4" id="opcao-enquete" value="opcao"><label for="opcao">Sim</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:80%">80%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete4" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:20%">20%</div>
-                                </div>
-                            </div>
                         </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Respondido</lin>
+                            </ul>
+                            <div class="btn-group">
+                                <button class="btn-comment">Ver resposta</button>
+                                
+                            </div>
+                        </footer>
                     </div>
-                    <div class="card enquete">
+                    <div class="card ocorr">
                         <header>
                             <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
+                                <img src="./public/img/posts-mural/homem-jovem-cachecol.jpg" alt="Imagem de perfil">
                                 <div class="user-info">
-                                    <p>Síndico</p>
+                                    <p>Pedro Henrique</p>
+                                    <span>Apartamento 2</span>
                                 </div>
                             </div>
                             <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
+                                <li class="post-type">Ocorrência</li>
+                                <li class="enquete-date">08/12/2019</li>
                             </ol>
                         </header>
                         <main>
                             <p class="post-text">
-                                Você gostaria de uma feirinha no condomínio? Desse modo, evitariamos aglomerações externas durante a quarentena.
+                                Hoje pela tarde estava tentando ao máximo concentrar-me nos meus estudos, mas os dois cachorros do vizinho (apto. 222) não paravam de latir e brigar entre si na tentativa de abrir a porta.
+                                Os latidos continuaram durante toda a tarde e noite, de forma que não consegui dormir.
                             </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Sim, em fins de semana</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:40%">40%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Sim, em dias de semana </label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:30%">30%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete3" id="opcao-enquete" value="opcao"><label for="opcao">Não</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:30%">30%</div>
-                                </div>
-                            </div>
                         </main>
+                        <footer>
+                            <ul class="post-info-ocorr">
+                                <li><img src="./public/img/icones-mural/Verde/check.svg" alt=""></li>
+                                <li>Respondido</lin>
+                            </ul>
+                            <div class="btn-group">
+                                <button class="btn-comment">Ver resposta</button>
+                                
+                            </div>
+                        </footer>
                     </div>
-                    <div class="card enquete">
-                        <header>
-                            <div class="user-group">
-                                <img src="./public/img/posts-mural/homem-meiaidade-boina.jpg" alt="Imagem de perfil">
-                                <div class="user-info">
-                                    <p>Síndico</p>
-                                </div>
-                            </div>
-                            <ol>
-                                <li class="post-type">Enquete</li>
-                                <li class="enquete-date">encerrado em 09/03/2020</li>
-                            </ol>
-                        </header>
-                        <main>
-                            <p class="post-text">
-                                Vamos reformar a Brinquedoteca e temos 3 sugestões de cores. Qual você prefere?
-                            </p>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Rosa</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:22%">23%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Verde</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:50%">50%</div>
-                                </div>
-                            </div>
-                            <div class="dados-enquete">
-                                <input type="radio" name="escolha-enquete2" id="opcao-enquete" value="opcao"><label for="opcao">Azul</label>
-                                <div class="barra-container">
-                                    <div class="valor-enquete" style="width:25%">27%</div>
-                                </div>
-                            </div>
-                        </main>
-                    </div>
+                    
                 </section>
 
             </main>
