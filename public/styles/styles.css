@@ -12,6 +12,7 @@
 @import "./partials/toggle-switch.css";
 @import "./partials/page-title.css";
 @import "./partials/ocorrencias.css";
+@import "./partials/cardReservas.css";
 
 * {
     box-sizing: border-box;

@@ -106,7 +106,76 @@
 
             <!-- Divisória (parte do Titulo) -->
             <div class="page-title-linha-box"></div>
+
+            <div class="cabecalho-periodo">
+                <div class="escolha-periodo">
+                    <div class="periodo-text">
+                        <span>Selecione o Espaço</span>
+                    </div>
+                    <div class="custom-select" id="select-tempo" style="width:200px;">
+                        <select>
+                        <option value="0">Salão de Festas</option>
+                        <option value="1">Churrasqueira</option>
+                        <option value="2">Piscina</option>
+                        <option value="3">Academia</option>
+                        <option value="4">Brinquedoteca</option>
+                        </select>
+                    </div>
+                                        
+                    <button class="btn-group">Aplicar!</button>  
+
+                    <button class="btn-group" onclick="openModal('Gerenciar Espaços')">Gerenciar Espaços</button> 
+                </div>
+            </div>
             
+             <!-- Conteudo Principal -->
+             <main>
+                <div class="conatiner">
+                    <div class="wrapReservas">
+                        
+                        <div class="box one">
+                            
+                            <h1>Salão de Festas</h1>
+                            <div class="poster p1">
+                                <h4>SF</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="box two">
+                            
+                            <h1>Churrasqueira</h1>
+                            <div class="poster p2">
+                                <h4>Ch</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="box three">
+                            
+                            <h1>Piscina</h1>
+                            <div class="poster p3">
+                                <h4>P</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="box four">
+                            
+                            <h1>Academia</h1>
+                            <div class="poster p4">
+                                <h4>A</h4>
+                            </div>
+                        </div>
+
+                        <div class="box five">
+                            
+                            <h1>Brinquedoteca</h1>
+                            <div class="poster p5">
+                                <h4>Br</h4>
+                            </div>
+                        </div>
+                           
+                    </div>
+                    </div>
+             </main>
 
         <!-- Modais -->
         <div id="open-modal" class="modal"></div>
