@@ -40,11 +40,53 @@
   margin-left: 25vw !important;
 }
 
+/* Main Feed - FILTROS */
 .modal-filtros {
-  width: 50vw !important;
-  margin-left: 25vw !important;
+  width: 80%;
+  /* max width da erro nas margens ;( */
+  /* max-width: 500px; */
+  margin-left: 10%;  
 }
 
+.modal-filtros h2 {
+   font-family: 'Roboto Condensed' sans-serif;
+   color: #707070;
+   font-weight: 700;
+   font-size: 1.5em;
+   margin-bottom: 30px;
+}
+
+.filtro-interno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtro-interno button {
+  border: none;
+  border-radius: 25px;
+  background-color: #F70065;
+  padding: 10px 20px;
+  color: white;
+  font-family: 'Roboto' sans-serif;
+  font-size: 18px;
+  margin-top: 30px;  
+}
+
+.filtro-group {
+  display: flex;
+  margin-bottom: 20px;  
+}
+
+.filtro-group p {  
+  font-family: 'Roboto' sans-serif;
+  color: #707070;
+  font-size: 16px;  
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+/* Main Feed - NOVA OCORRENCIA */
 .modal-nova-ocorrencia {
   width: 50vw !important;
   margin-left: 25vw !important;
@@ -60,7 +102,6 @@
   position: absolute;
   top: 100px;
   
-  width:90vw;
   height: auto;
   min-height: 50px;
   padding: 15px;
