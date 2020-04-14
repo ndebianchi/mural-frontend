@@ -30,6 +30,26 @@
   animation: fadein 0.5s;
 }
 
+.modal-novo-post {
+  width: 50vw !important;
+  margin-left: 25vw !important;
+}
+
+.modal-novo-aviso {
+  width: 50vw !important;
+  margin-left: 25vw !important;
+}
+
+.modal-filtros {
+  width: 50vw !important;
+  margin-left: 25vw !important;
+}
+
+.modal-nova-ocorrencia {
+  width: 50vw !important;
+  margin-left: 25vw !important;
+}
+
 @-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } } /* Safari, Chrome and Opera > 12.1 */
 @-moz-keyframes    fadein { from { opacity: 0; } to { opacity: 1; } } /* Firefox < 16 */
 @-ms-keyframes     fadein { from { opacity: 0; } to { opacity: 1; } } /* Internet Explorer */
@@ -39,8 +59,7 @@
 #open-modal {
   position: absolute;
   top: 100px;
-  left: 5%;
-
+  
   width:90vw;
   height: auto;
   min-height: 50px;

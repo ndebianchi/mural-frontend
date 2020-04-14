@@ -31,11 +31,6 @@
 	transition: 200ms ease-in-out;
     }
     
-.boxDesktop:hover {
-	
-	-webkit-box-shadow: 0 0 5px #F70065;
-	        box-shadow: 0 0 5px #F70065;
-}
 
 .boxDesktop h2 {
 	color: #fff;
@@ -57,13 +52,8 @@
         -webkit-transition: 200ms ease-in-out;
         -o-transition: 200ms ease-in-out;
         transition: 200ms ease-in-out;
-        }
-        
-    .boxMobile:hover {
-        
-        -webkit-box-shadow: 0 0 5px #F70065;
-                box-shadow: 0 0 5px #F70065;
-    }
+        } 
+
     
     .boxMobile h2 {
         color: #fff;
@@ -81,34 +71,34 @@
 }
 
 .one {
-	background-image: url('../partials/espacos-mural/salao.jpg');
+	background-image: url('../../img/espacos-mural/salao.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .two {
-	background: url('../partials/espacos-mural/churrasqueira.jpg');
+	background: url('../../img/espacos-mural/churrasqueira.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .three {
-	background: url('../partials/espacos-mural/piscina.jpg');
+	background: url('../../img/espacos-mural/piscina.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .four {
-	background: url('../partials/espacos-mural/academia.jpg');
+	background: url('../../img/espacos-mural/academia.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .five {
-	background: url('../partials/espacos-mural/brinquedoteca.jpg');
+	background: url('../../img/espacos-mural//brinquedoteca.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

@@ -38,7 +38,11 @@ body {
     padding: 5px 10px;
     text-decoration: none;
 }
-  
+
+.modalInterno {
+    display: none;
+}
+
 @media (min-width: 992px) {
     body {
         overflow: hidden;

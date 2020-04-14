@@ -65,14 +65,23 @@ function profileDropdown() {
   que a função for chamada
 */
 
-function openModal(texto) {
+function openModal(modal) {
   // Habilita visualização do background do modal
   toggleBackgroundModal('open-modal');
 
-  // Atribui conteúdo ao modal
-  document.getElementById('open-modal').innerHTML = '<h1>' + texto + '</h1>';
-  
+  // Fecha todos os modais internos para abertura do modal selecionado
+  let modaisInternos = document.getElementsByClassName('modalInterno');
+  for(var i=0; i < modaisInternos.length; i++) {
+    modaisInternos[i].style.display = "none";
+  }
 
+  // Inclui a classe ao modal  
+//  document.getElementById('open-modal').attributes('class', 'modal modal-' + modal); // obs.: criar a classe no css com o parametro passado no 'modal'
+  document.getElementById('open-modal').className = 'modal modal-' + modal;
+
+  // Apresenta modal selecionado
+  document.getElementById(modal).style.display = 'block';
+  
   // Verifica se "modais" está oculto.
   //  - Se sim: exiba.
   //  - Se não: esconda.

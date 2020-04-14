@@ -67,19 +67,19 @@
                 </button>
 
                 <div class="options">
-                    <a href="javascript:void(0)" onclick="openModal('Novo Post')">
+                    <a href="javascript:void(0)" onclick="openModal('novo-post')">
                         <img src="./public/img/icones-mural/Branco/post.svg" alt="Novo Post">
                         <span>Novo Post</span>
                     </a>
-                    <a href="javascript:void(0)" onclick="openModal('Filtros')">
+                    <a href="javascript:void(0)" onclick="openModal('filtros')">
                         <img src="./public/img/icones-mural/Branco/filtro.svg" alt="Filtros">
                         <span>Filtros</span>
                     </a>
-                    <a href="javascript:void(0)" onclick="openModal('Nova Ocorrência')">
+                    <a href="javascript:void(0)" onclick="openModal('nova-ocorrencia')">
                         <img src="./public/img/icones-mural/Branco/ocorrencias.svg" alt="Nova Ocorrência">
                         <span>Nova Ocorrência</span>
                     </a>
-                    <a href="javascript:void(0)" onclick="openModal('Novo Aviso')">
+                    <a href="javascript:void(0)" onclick="openModal('novo-aviso')">
                         <img src="./public/img/icones-mural/Branco/avisos.svg" alt="Novo Aviso">
                         <span>Novo Aviso</span>
                     </a>
@@ -350,7 +350,20 @@
         </div>
 
         <!-- Modais -->
-        <div id="open-modal" class="modal"></div>
+        <div id="open-modal" class="modal">
+            <div id="novo-post" class="modalInterno">
+                Novo Post OK<br>outra linha
+            </div>
+            <div id="novo-aviso" class="modalInterno">
+                Novo Aviso OK
+            </div>
+            <div id="filtros" class="modalInterno">
+                Filtro está OK<br>duas
+            </div>
+            <div id="nova-ocorrencia" class="modalInterno">
+                Ocorrência OK
+            </div>
+        </div>
     </div>
 </body>
 </html>
