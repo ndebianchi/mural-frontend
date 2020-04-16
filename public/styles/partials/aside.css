@@ -102,6 +102,7 @@
     opacity: 1;
 }
 
+
 /* *********** */
 /* MEDIA QUERY */
 /* *********** */
@@ -120,7 +121,7 @@
     /* mostra nav-desktop */
     .sidebarDesktop {
         display: block;
-    }
+    }    
 
     .sidebarDesktop a img {
         width: 30px;

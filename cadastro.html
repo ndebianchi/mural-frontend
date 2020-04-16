@@ -14,11 +14,9 @@
     <div class="container">
         <!-- Fundo escuro do modal -->
         <div id="background-modal" onclick="toggleBackgroundModal()"></div>
-
-        <!-- Nav Mobile  -->
-        
+  
         <!-- Nav Desktop -->
-        <div class="sidebarDesktop">
+        <div class="sidebarDesktop-cadastro">
             <div><img src="public/img/logos-mural/logo-v-rosa.svg" alt=""></div>
         </div>
 
@@ -28,9 +26,9 @@
 
             <!-- Header com Nav, Hendy e Titulo -->
             <header>
-                <!-- Botão Nav-Mobile -->
-                <div>
-                    <!-- div vazia pra nao quebrar o flex. não é gambiarra, imagina! -->
+                <!-- Icone Logo Mural Mobile -->
+                <div class="icone-cadastro">
+                    <img src="./public/img/logos-mural/logo-icone-rosa.svg" alt="Mural">
                 </div>
 
                 <!-- Icone + Titulo da Pagina -->
@@ -42,30 +40,10 @@
                 </div>
 
                 <!-- Hendy -->
-                <button class="profile-icon" onclick="profileDropdown()">
-                    <img src="./public/img/posts-mural/hendy-almeida.jpg" alt="Imagem de perfil">
+                <button class="profile-icon">
+                    <img src="" alt="">
                 </button>
-                <div id="profile-dropdown" class="modal">
-                    <div class="profile-content">
-                        <header class="account-header">
-                            <div class="user-group">
-                                <img src="./public/img/posts-mural/hendy-almeida.jpg" alt="Imagem de perfil">
-                                <div class="user-info">
-                                    <p>Hendy Almeida</p>
-                                    <span>Apartamento 1</span>
-                                </div>
-                            </div>
-                        </header>
-                        <div class="account-main">
-                            <a href="javascript:void(0)"><img src="./public/img/icones-mural/Cinza/settings.svg" alt="">Configurações</a>
-                            <a href="javascript:void(0)"><img src="./public/img/icones-mural/Cinza/user.svg" alt="">Ver meu perfil</a>
-                        </div>
-                        <div class="account-footer">
-                            <hr>
-                            <a href="login.html"><img src="./public/img/icones-mural/Cinza/log-out.svg" alt=""> Sair</a>
-                        </div>
-                    </div>
-                </div>
+                
             </header>
 
 
@@ -77,13 +55,12 @@
                 <div class="page-title-linha"></div>
 
                 <!-- Configurações -->
-                <div class="profile-pic">
+                <div class="cadastro-pic">
                     <div>
-                        <img src="public/img/posts-mural/mulher-idosa-chapeuVermelho.jpg" alt="">
+                        <img src="public/img/icones-mural/Rosa/profile.svg" alt="">
                     </div>
                     <div>
-                        <p>Nome Completo</p>
-                        <a href="#">Editar Foto</a>
+                        <a href="#">Adicionar Foto</a>
                     </div>
                 </div>
 
