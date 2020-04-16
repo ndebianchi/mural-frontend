@@ -30,9 +30,102 @@
   animation: fadein 0.5s;
 }
 
-.modal-novo-post {
-  width: 50vw !important;
-  margin-left: 25vw !important;
+/*8888888888888888888888888888888888888888888888
+MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA 
+888888888888888888888888888888888888888888888888*/
+
+.modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+  width: 70vw !important;
+  padding: 30px !important;
+  /* Isso fez dar certinho a centralização */
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal-novo-post h1, .modal-novo-aviso h1, .modal-nova-ocorrencia h1{
+  margin-left:10px
+}
+
+.new-foto-mensagem img{
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  margin-right: 20px;
+}
+
+.new-foto-mensagem{
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 3%;
+  margin-bottom: 1%;
+  padding-bottom: 3%;
+  border-bottom: solid 1px #F70065;
+  align-items: center;
+}
+
+.new-foto-mensagem textarea{
+  width: 90%;
+  outline: none;
+  border-radius: 4px;
+  resize: none;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.new-foto-categoria{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.new-cancel-send{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-foto-categoria button, .new-cancel-send button{
+  align-items: center;
+    border: none;
+    background-color: #F70065;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 3px;
+    height: 30px;
+    margin-left: 10px;
+}
+/* Media queries (pensei em como fazer universal, mas por enquanto n sei como) */
+@media (max-width: 970px){
+  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+    width: 85vw !important;
+  }
+}
+@media (max-width: 750px){
+  .new-foto-mensagem{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .new-foto-mensagem img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+}
+@media (max-width: 600px){
+  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+    width: 90vw !important;
+  }
+  .new-foto-mensagem textarea{
+    width: 95%;
+    height: 60%;
+  }
 }
 
 .modal-novo-aviso {
@@ -87,10 +180,10 @@
 }
 
 /* Main Feed - NOVA OCORRENCIA */
-.modal-nova-ocorrencia {
+/* .modal-nova-ocorrencia {
   width: 50vw !important;
   margin-left: 25vw !important;
-}
+} */
 
 @-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } } /* Safari, Chrome and Opera > 12.1 */
 @-moz-keyframes    fadein { from { opacity: 0; } to { opacity: 1; } } /* Firefox < 16 */

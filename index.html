@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./public/styles/styles.css">
     <script defer src="./public/js/script.js"></script>
     <script defer src="./public/js/carousel.js"></script>
+    <script defer src="./public/js/select-box.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
     <title>Mural</title>
 </head>
@@ -381,9 +382,29 @@
 
             <!-- Modal Novo Post -->
             <div id="novo-post" class="modalInterno">
-                Novo Post OK
+                <h1>Novo Post</h1>
+                <div class="new-foto-mensagem">
+                    <img src="public/img/posts-mural/homem-meiaidade-boina.jpg">
+                    <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+                </div>
+                <div class="new-foto-categoria">
+                    <button class="btn-group">Adicionar foto</button>
+                    <div class="custom-select" id="select-tempo" style="width:200px;">
+                        <select>
+                        <option value="0">Categoria</option>
+                        <option value="1">Posts</option>
+                        <option value="2">Avisos</option>
+                        <option value="3">Ocorrências</option>
+                        <option value="4">Anúncios</option>
+                        <option value="5">Eventos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="new-cancel-send">
+                    <button class="btn-group" type="reset">Cancelar</button>
+                    <button class="btn-group" type="submit">Enviar</button>
+                </div>
             </div>
-
             <!-- Modal Filtros -->
             <div id="filtros" class="modalInterno">
                 <form class="filtro-interno">
