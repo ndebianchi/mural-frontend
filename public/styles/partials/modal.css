@@ -100,9 +100,10 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
     height: 30px;
     margin-left: 10px;
 }
+
 /* Media queries (pensei em como fazer universal, mas por enquanto n sei como) */
 @media (max-width: 970px){
-  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-filtros {
     width: 85vw !important;
   }
 }
@@ -133,12 +134,19 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   margin-left: 25vw !important;
 }
 
+
+/* ******************* */
 /* Main Feed - FILTROS */
+/* ******************* */
+
 .modal-filtros {
-  width: 80%;
-  /* max width da erro nas margens ;( */
-  /* max-width: 500px; */
-  margin-left: 10%;  
+  width: 70vw !important;
+  padding: 30px !important;
+  /* Centralização By Aguiaia (top demais, slc) */
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
 }
 
 .modal-filtros h2 {
@@ -155,7 +163,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   align-items: center;
 }
 
-.filtro-interno button {
+.filtro-interno button.aplicar {
   border: none;
   border-radius: 25px;
   background-color: #F70065;
@@ -165,10 +173,22 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   font-size: 18px;
   margin-top: 30px;  
 }
+.filtro-interno button.redefinir {
+  border: none;
+  border-radius: 25px;
+  background-color:white;
+  padding: 10px 20px;
+  color: #707070;
+  font-family: 'Roboto' sans-serif;
+  font-size: 18px;
+  margin-top: 30px;  
+}
 
 .filtro-group {
+  width: 100%;
   display: flex;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
+  justify-content: space-between;  
 }
 
 .filtro-group p {  
@@ -178,6 +198,62 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   margin-top: 8px;
   margin-right: 15px;
 }
+
+@media (min-width: 500px){
+  .modal-filtros {
+    width: 25vw !important;
+  }
+}
+
+
+/*8888888888888888888
+    MODAIS LOGIN 
+88888888888888888888*/
+
+.modal-como-cadastrar {
+  width: 80vw !important;
+  padding: 30px !important;
+  /* Centralização By Aguiaia (top demais, slc) */
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal-como-cadastrar div {
+  margin: 0 auto 30px;
+  padding: 10px;
+  max-width: 230px;
+}
+
+.modal-como-cadastrar h2 {
+  font-family: 'Roboto' sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #707070;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-como-cadastrar p {
+  font-family: 'Roboto' sans-serif;
+  font-size: 16px;  
+  color: #707070;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+
+
+@media (min-width: 500px){
+  .modal-como-cadastrar {
+    width: 25vw !important;
+  }
+}
+
+/* _____________________________ */
+
+
 
 /* Main Feed - NOVA OCORRENCIA */
 /* .modal-nova-ocorrencia {

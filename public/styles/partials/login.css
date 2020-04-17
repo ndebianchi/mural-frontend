@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-
-* { box-sizing: border-box; }
-body {
-    margin: 0;
-}
-
 #mural {
     display: flex;
     height: 100vh;  
     justify-content: flex-start;
   }
 
-#main {
+#main-login {
     display: block;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -19,17 +12,17 @@ body {
     height: 100%;
 }
 
-#main div {
+#main-login div {
     margin: 10px;
 }
 
-#main div a{
+#main-login div a{
     text-decoration: none;
     color: #F70065;
 }
 
 
-.logo {
+.logo-login {
     width: 70%;
     max-width: 300px;
     padding: 30px;    
@@ -38,18 +31,18 @@ body {
 }
 
 
-.login {
+.login-form {
     display: block;
     width: 100%;
     margin-bottom: 10%;
 }
 
-.login div label {
+.login-form div label {
     font-weight: 600;
     color: #707070;    
 }
 
-.login div input {
+.login-form div input {
     padding: 6px;
     width: 60%;
     max-width: 250px;
@@ -57,7 +50,7 @@ body {
     border: solid 1px #707070;    
 }
 
-.login div button {
+.login-form div button {
     margin-top: 30px;    
     background-color: white;
     color: #707070;
@@ -70,7 +63,7 @@ body {
 
 /* DESKTOP */
 
-.topo {
+.topo-login {
     display: none;
     border-bottom: #F70065 2px solid;
     margin: 80px auto 30px!important;
@@ -78,7 +71,15 @@ body {
     max-width: 250px;
 }
 
-.aside {
+.topo-login h2 {
+    font-family: 'Roboto' sans-serif;
+    color: #707070;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 20px auto;
+}
+
+.aside-login {
     display: none;
     position: fixed;
     height: 100%;
@@ -89,20 +90,21 @@ body {
     align-items: center;
 }
 
-.aside div {
-    width: 80%;    
+.aside-login div {
+    width: 80%;
+    padding: 30px;    
 }
 
 @media screen and (min-width: 992px){
-    .logo { display: none; }
+    .logo-login { display: none; }
 
-    .topo { display: block }
+    .topo-login { display: block }
 
-    #main { margin-left: 300px; }
+    #main-login { margin-left: 300px; }
 
-    .aside { display: flex; }
+    .aside-login { display: flex; }
 
-    .login div button:hover {
+    .login-form div button:hover {
         cursor: pointer;
         color: #F70065;
         border: #F70065 solid 1px;

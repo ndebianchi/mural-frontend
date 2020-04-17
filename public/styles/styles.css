@@ -15,6 +15,7 @@
 @import "./partials/cardReservas.css";
 @import "./partials/boleto.css";
 @import "./partials/cadastro.css";
+@import "./partials/login.css";
 
 * {
     box-sizing: border-box;
