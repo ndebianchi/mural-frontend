@@ -25,7 +25,7 @@
                 <a href="index.html"><img src="./public/img/logos-mural/logo-h-branco.svg" alt="Mural"></a>
             </div>
             <a href="index.html"><img src="./public/img/icones-mural/Branco/home.svg" alt="Inicio">Início</a>
-            <a href="#"><img src="./public/img/icones-mural/Branco/avisos.svg" alt="Avisos">Avisos</a>            
+            <a href="index.html"><img src="./public/img/icones-mural/Branco/avisos.svg" alt="Avisos">Avisos</a>            
             <a href="ocorrencias.html"><img src="./public/img/icones-mural/Branco/ocorrencias.svg"
                     alt="Ocorrencias">Ocorrências</a>
             <a href="reservas.html"><img src="./public/img/icones-mural/Branco/reservas.svg" alt="Reservas">Reservas</a>
@@ -37,7 +37,7 @@
                     alt="Prestação de Contas">Prestação de Contas</a>
             <a href="achadosEperdidos.html"><img src="./public/img/icones-mural/Branco/achados3.svg"
                     alt="Achados e Perdidos">Achados e Perdidos</a>
-            <a href="achadosEperdidos.html"><img src="./public/img/icones-mural/Branco/profile.svg" alt="Gerenciar Perfis">Gerenciar
+            <a href="#"><img src="./public/img/icones-mural/Branco/profile.svg" alt="Gerenciar Perfis">Gerenciar
                 Perfis</a>
         </div>
 
@@ -47,7 +47,7 @@
                 <a href="index.html"><img src="./public/img/logos-mural/logo-h-rosa.svg" alt="Mural"></a>
             </div>
             <div><a href="index.html"><img src="./public/img/icones-mural/Preto/home.svg" alt="Inicio">Início</a></div>
-            <div><a href="#"><img src="./public/img/icones-mural/Preto/avisos.svg" alt="Avisos">Avisos</a></div>
+            <div><a href="index.html"><img src="./public/img/icones-mural/Preto/avisos.svg" alt="Avisos">Avisos</a></div>
             <div><a href="ocorrencias.html"><img src="./public/img/icones-mural/Preto/ocorrencias.svg"
                         alt="Ocorrencias">Ocorrências</a></div>
             <div><a href="reservas.html"><img src="./public/img/icones-mural/Preto/reservas.svg"
@@ -55,7 +55,7 @@
             <div><a href="#"><img src="./public/img/icones-mural/Preto/agenda.svg" alt="Agenda">Agenda</a></div>
             <div><a href="enquetes.html"><img src="./public/img/icones-mural/Preto/enquete.svg"
                         alt="Enquetes">Enquetes</a></div>
-            <div><a href="#"><img src="./public/img/icones-mural/Preto/2via.svg" alt="2ª via do Condomínio">2ª via do
+            <div><a href="boleto.html"><img src="./public/img/icones-mural/Preto/2via.svg" alt="2ª via do Condomínio">2ª via do
                     Condomínio</a>
             </div>
             <div><a href="contas.html"><img src="./public/img/icones-mural/Preto/contas2.svg"
@@ -389,7 +389,7 @@
                 </div>
                 <div class="new-foto-categoria">
                     <button class="btn-group">Adicionar foto</button>
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
+                    <div class="custom-select" id="select-box-modal" style="width:200px;">
                         <select>
                         <option value="0">Categoria</option>
                         <option value="1">Posts</option>
@@ -401,8 +401,8 @@
                     </div>
                 </div>
                 <div class="new-cancel-send">
-                    <button class="btn-group" type="reset">Cancelar</button>
-                    <button class="btn-group" type="submit">Enviar</button>
+                    <button class="cancelar" type="reset">Cancelar</button>
+                    <button class="enviar-modal-novo" type="submit">Enviar</button>
                 </div>
             </div>
             <!-- Modal Filtros -->
@@ -454,12 +454,47 @@
 
             <!-- Modal Nova Ocorrência -->
             <div id="nova-ocorrencia" class="modalInterno">
-                Ocorrência OK
+                <h1>Nova Ocorrência</h1>
+                <div class="new-foto-mensagem">
+                    <img src="public/img/posts-mural/homem-meiaidade-boina.jpg">
+                    <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+                </div>
+                <div class="new-foto-categoria">
+                    <button class="btn-group">Adicionar foto</button>
+                </div>
+                <div class="new-cancel-send">
+                    <button class="cancelar" type="reset">Cancelar</button>
+                    <button class="enviar-modal-novo" type="submit">Enviar</button>
+                </div>
             </div>
 
             <!-- Modal Novo Aviso -->
             <div id="novo-aviso" class="modalInterno">
-                Novo Aviso OK
+                <h1>Novo Aviso</h1>
+                <div class="new-foto-mensagem">
+                    <img src="public/img/posts-mural/homem-meiaidade-boina.jpg">
+                    <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+                </div>
+                <div class="new-foto-categoria marcar-agenda-modal">
+                        <div class="dados-enquete">
+                            <input type="radio" name="escolha-enquete1" id="opcao-enquete" value="opcao"><label for="opcao">Marcar na agenda</label>
+                        </div>
+                        <div class="custom-select" id="select-box-modal" style="width:200px;">
+                            <select>
+                            <option value="0">Data:</option>
+                            <option value="1">01/05/20</option>
+                            <option value="2">02/05/20</option>
+                            <option value="3">03/05/20</option>
+                            <option value="4">04/05/20</option>
+                            <option value="5">05/05/20</option>
+                            </select>
+                        </div>
+                    
+                </div>
+                <div class="new-cancel-send">
+                    <button class="cancelar" type="reset">Cancelar</button>
+                    <button class="enviar-modal-novo" type="submit">Enviar</button>
+                </div>
             </div>
 
         </div>

@@ -42,11 +42,16 @@ Começo do selecionar período
     margin: 15px 10px;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* **************
 Aqui começa o select-box (texto importado)
 ***************** */
 
 /* The container must be positioned relative: */
+
 .custom-select {
    position: relative;
    font-family: Roboto Condensed;
@@ -227,6 +232,9 @@ Media
 @media(max-width: 770px){
     .custom-select{
         max-width: 90px;
+    }
+    #select-box-modal{
+        max-width: 115px;
     }
 }
 @media (max-width: 640px){

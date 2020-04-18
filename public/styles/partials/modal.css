@@ -30,11 +30,11 @@
   animation: fadein 0.5s;
 }
 
-/*8888888888888888888888888888888888888888888888
-MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA 
-888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888888888888888888888888888888888888888888
+MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
+88888888888888888888888888888888888888888888888888888888888888888*/
 
-.modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+.modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-novo-achado-perdido {
   width: 70vw !important;
   padding: 30px !important;
   /* Isso fez dar certinho a centralização */
@@ -44,7 +44,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   transform: translate(-50%, -50%) !important;
 }
 
-.modal-novo-post h1, .modal-novo-aviso h1, .modal-nova-ocorrencia h1{
+.modal-novo-post h1, .modal-novo-aviso h1, .modal-nova-ocorrencia h1, .modal-novo-achado-perdido h1{
   margin-left:10px
 }
 
@@ -57,7 +57,6 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
 
 .new-foto-mensagem{
   display: flex;
-  /* flex-wrap: wrap; */
   margin-top: 3%;
   margin-bottom: 1%;
   padding-bottom: 3%;
@@ -69,9 +68,11 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   width: 90%;
   outline: none;
   border-radius: 4px;
+  line-height: 22px;
   resize: none;
   font-family: Roboto;
   font-size: 16px;
+  padding: 15px;
 }
 
 .new-foto-categoria{
@@ -79,31 +80,75 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1%;
+  margin-top: 20px;
 }
+
+/* Marcar na agenda com radio button */
+
+.marcar-agenda-modal{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.marcar-agenda-modal .dados-enquete input[type=radio] {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 0px 5px;
+}
+
+.marcar-agenda-modal .dados-enquete{
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+}
+
+/* Botões cancelar e enviar com característica próprias */
 
 .new-cancel-send{
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
-.new-foto-categoria button, .new-cancel-send button{
+.new-foto-categoria button.btn-group, .new-cancel-send button.btn-group{
   align-items: center;
-    border: none;
-    background-color: #F70065;
-    border-radius: 8px;
-    color: #FFF;
-    cursor: pointer;
-    display: flex;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 3px;
-    height: 30px;
-    margin-left: 10px;
+  border: none;
+  background-color: #F70065;
+  border-radius: 8px;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 3px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 5px 10px;
 }
 
-/* Media queries (pensei em como fazer universal, mas por enquanto n sei como) */
+.new-cancel-send button.cancelar{
+  border: none;
+  background-color:white;
+  padding: 10px 20px;
+  color: #707070;
+  font-family: 'Roboto' sans-serif;
+  font-size: 18px;
+}
+
+.new-cancel-send button.enviar-modal-novo{
+  border: none;
+  border-radius: 25px;
+  background-color: #F70065;
+  padding: 10px 20px;
+  color: white;
+  font-family: 'Roboto' sans-serif;
+  font-size: 18px;
+}
+
 @media (max-width: 970px){
-  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-filtros {
+  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-filtros, .modal-novo-achado-perdido {
     width: 85vw !important;
   }
 }
@@ -120,18 +165,13 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
   }
 }
 @media (max-width: 600px){
-  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia {
+  .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-novo-achado-perdido {
     width: 90vw !important;
   }
   .new-foto-mensagem textarea{
     width: 95%;
     height: 60%;
   }
-}
-
-.modal-novo-aviso {
-  width: 50vw !important;
-  margin-left: 25vw !important;
 }
 
 
@@ -253,13 +293,6 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA
 
 /* _____________________________ */
 
-
-
-/* Main Feed - NOVA OCORRENCIA */
-/* .modal-nova-ocorrencia {
-  width: 50vw !important;
-  margin-left: 25vw !important;
-} */
 
 @-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } } /* Safari, Chrome and Opera > 12.1 */
 @-moz-keyframes    fadein { from { opacity: 0; } to { opacity: 1; } } /* Firefox < 16 */
