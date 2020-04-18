@@ -301,12 +301,19 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 @keyframes         fadein { from { opacity: 0; } to { opacity: 1; } } /* Geral */
 
 #open-modal {
-  position: absolute;
+  /* Abaixo, comentado, temos a centralização antiga */
+  /* position: absolute;
   top: 100px;
   
   height: auto;
   min-height: 50px;
-  padding: 15px;
+  padding: 15px; */
+
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  padding: 30px !important;
 
   display: none;
   transition: opacity 2s ease-in;
@@ -315,6 +322,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 #open-modal h1 {
   color: #707070;
   font: Bold Condensed 26px/32px Roboto;
+  margin-left:10px
 }
 
 /* **************** */
