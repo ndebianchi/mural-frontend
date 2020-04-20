@@ -16,6 +16,7 @@
 @import "./partials/boleto.css";
 @import "./partials/cadastro.css";
 @import "./partials/login.css";
+@import "./partials/gerenciar-perfis.css";
 
 * {
     box-sizing: border-box;
