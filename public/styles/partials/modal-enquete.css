@@ -16,14 +16,21 @@
   text-transform: capitalize;
 }
 
+.enquete__body {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .enquete__periodo {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .enquete__option {
   color: #707070;
+  margin-right: 10px;
 }
 
 .enquete__option--bold {
@@ -31,7 +38,7 @@
 }
 
 .enquete__select {
-  margin: 5px 0;
+  margin: 5px 0 5px 10px;
 }
 
 .enquete__button {
@@ -39,12 +46,13 @@
   border: 0;
   border-radius: 8px;
   color: #FFF;
+  cursor: pointer;
   display: block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
   font-weight: bold;
-  margin: 10px auto;
-  padding: 10px 24px;
+  margin: 10px 0;
+  padding: 5px 10%;
 }
 
 .enquete__button--back {
@@ -86,4 +94,24 @@
 
 .enquete__actions {
   display: flex;
+  justify-content: flex-end;
+}
+
+#open-modal {
+  padding: 10px !important;
+}
+
+@media only screen and (min-width: 500px) {
+  .escolha-periodo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .enquete__periodo {
+    justify-content: center;
+  }
+
+  #open-modal.modal-nova-enquete {
+    width: 50vw !important;
+  }
 }
