@@ -83,6 +83,16 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   margin-top: 20px;
 }
 
+.new-foto-categoria button{
+  display: flex;
+}
+
+.new-foto-categoria button img{
+  width: 16px;
+  height: 16px;
+  padding-right: 6px;
+}
+
 /* Marcar na agenda com radio button */
 
 .marcar-agenda-modal{
@@ -168,9 +178,15 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   .modal-novo-post, .modal-novo-aviso, .modal-nova-ocorrencia, .modal-novo-achado-perdido {
     width: 90vw !important;
   }
+  .new-foto-categoria{
+    margin-top: 15px;
+  }
   .new-foto-mensagem textarea{
-    width: 95%;
-    height: 60%;
+    width: 95vh;
+    height: 55vw;
+  }
+  .new-cancel-send{
+    margin-top: 15px;
   }
 }
 
