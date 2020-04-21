@@ -45,14 +45,13 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 }
 
 .modal-novo-post h1, .modal-novo-aviso h1, .modal-nova-ocorrencia h1, .modal-novo-achado-perdido h1{
-  margin-left:10px
+  margin-left: 0px !important;
 }
 
 .new-foto-mensagem img{
   border-radius: 50%;
   width: 54px;
   height: 54px;
-  margin-right: 20px;
 }
 
 .new-foto-mensagem{
@@ -170,7 +169,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   .new-foto-mensagem img{
     width: 70px;
     height: 70px;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     margin-top: 3%;
   }
 }
