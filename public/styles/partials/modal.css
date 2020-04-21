@@ -60,6 +60,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   border-radius: 50%;
   width: 54px;
   height: 54px;
+  margin-right: 25px;
 }
 
 .new-foto-mensagem {
@@ -187,6 +188,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
     height: 70px;
     margin-bottom: 5%;
     margin-top: 3%;
+    margin-right: 0px;
   }
 }
 
@@ -207,7 +209,6 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
     width: 95vh;
     height: 55vw;
   }
-
   .new-cancel-send {
     margin-top: 15px;
   }
@@ -403,8 +404,6 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   top: 50% !important;
   left: 50%;
   transform: translate(-50%, -50%) !important;
-  padding: 30px !important;
-
   display: none;
   transition: opacity 2s ease-in;
 }

@@ -96,8 +96,8 @@
   display: flex;
   justify-content: flex-end;
 }
-
-#open-modal {
+/* mudei a classe aqui para nao interferir no padding dos outros modais */
+.modal-nova-enquete {
   padding: 10px !important;
 }
 
