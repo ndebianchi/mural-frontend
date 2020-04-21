@@ -9,8 +9,12 @@
     <script defer src="./public/js/carousel.js"></script>
     <script defer src="./public/js/select-box.js"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link 
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"    rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
     <title>Enquetes</title>
 </head>
 
@@ -336,53 +340,57 @@
 
                 <div class="enquete__header">
                     <h2 class="enquete__heading">nova enquete</h2>
-                    <i class="fa fa-times enquete__icon"></i>
+                    <i class="enquete__icon" data-feather="x"></i>
                 </div>
                 
                 <div class="escolha-periodo">
 
-                    <div class="periodo-text">
-                        <span>De</span>
+                    <div class="enquete__periodo">
+                        <div class="periodo-text">
+                            <span class="enquete__option">De</span>
+                        </div>
+    
+                        <div class="custom-select enquete__select" style="width:200px;">
+                            <select>
+                                <option value="0">Início</option>
+                                <option value="1">Jan/2020</option>
+                                <option value="2">Fev/2020</option>
+                                <option value="3">Mar/2020</option>
+                                <option value="4">Abr/2020</option>
+                                <option value="5">Mai/2020</option>
+                                <option value="6">Jun/2020</option>
+                                <option value="7">Jul/2020</option>
+                                <option value="8">Ago/2020</option>
+                                <option value="9">Set/2020</option>
+                                <option value="10">Out/2020</option>
+                                <option value="11">Nov/2020</option>
+                                <option value="12">Dez/2020</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                            <option value="0">Início</option>
-                            <option value="1">Jan/2020</option>
-                            <option value="2">Fev/2020</option>
-                            <option value="3">Mar/2020</option>
-                            <option value="4">Abr/2020</option>
-                            <option value="5">Mai/2020</option>
-                            <option value="6">Jun/2020</option>
-                            <option value="7">Jul/2020</option>
-                            <option value="8">Ago/2020</option>
-                            <option value="9">Set/2020</option>
-                            <option value="10">Out/2020</option>
-                            <option value="11">Nov/2020</option>
-                            <option value="12">Dez/2020</option>
-                        </select>
-                    </div>
-
-                    <div class="periodo-text">
-                        <span>até</span>
-                    </div>
-
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                            <option value="0">Fim</option>
-                            <option value="1">Jan/2020</option>
-                            <option value="2">Fev/2020</option>
-                            <option value="3">Mar/2020</option>
-                            <option value="4">Abr/2020</option>
-                            <option value="5">Mai/2020</option>
-                            <option value="6">Jun/2020</option>
-                            <option value="7">Jul/2020</option>
-                            <option value="8">Ago/2020</option>
-                            <option value="9">Set/2020</option>
-                            <option value="10">Out/2020</option>
-                            <option value="11">Nov/2020</option>
-                            <option value="12">Dez/2020</option>
-                        </select>
+                    <div class="enquete__periodo">
+                        <div class="periodo-text">
+                            <span class="enquete__option">Até</span>
+                        </div>
+    
+                        <div class="custom-select enquete__select" style="width:200px;">
+                            <select>
+                                <option value="0">Fim</option>
+                                <option value="1">Jan/2020</option>
+                                <option value="2">Fev/2020</option>
+                                <option value="3">Mar/2020</option>
+                                <option value="4">Abr/2020</option>
+                                <option value="5">Mai/2020</option>
+                                <option value="6">Jun/2020</option>
+                                <option value="7">Jul/2020</option>
+                                <option value="8">Ago/2020</option>
+                                <option value="9">Set/2020</option>
+                                <option value="10">Out/2020</option>
+                                <option value="11">Nov/2020</option>
+                                <option value="12">Dez/2020</option>
+                            </select>
+                        </div>
                     </div>
 
                 </div>
@@ -391,23 +399,49 @@
 
                 <ul class="enquete__list">
                     <li class="enquete__item">
-                        <span class="enquete__option">Opção 1</span> 
-                        <input type="text" name="" id="" class="enquete__input">Azul</li>
+
+                        <span class="enquete__option enquete__option--bold">Opção 1</span> 
+                        <div class="enquete__inputs">
+                            <input type="text" name="" id="" placeholder="Digite..." class="enquete__input">
+                            <i class="enquete__icon--float" data-feather="edit-2"></i>
+                        </div>
+
+                    </li>
+
                     <li class="enquete__item">
-                        <span class="enquete__option">Opção 1</span> 
-                        <input type="text" name="" id="" class="enquete__input">Azul</li>
+
+                        <span class="enquete__option enquete__option--bold">Opção 1</span> 
+                        <div class="enquete__inputs">
+                            <input type="text" name="" id="" placeholder="Digite..." class="enquete__input">
+                            <i class="enquete__icon--float" data-feather="edit-2"></i>
+                        </div>
+
+                    </li>
+
                     <li class="enquete__item">
-                        <span class="enquete__option">Opção 1</span> 
-                        <input type="text" name="" id="" class="enquete__input">Azul</li>
+
+                        <span class="enquete__option enquete__option--bold">Opção 1</span> 
+                        <div class="enquete__inputs">
+                            <input type="text" name="" id="" placeholder="Digite..." class="enquete__input">
+                            <i class="enquete__icon--float" data-feather="edit-2"></i>
+                        </div>
+
+                    </li>
+
                     <li class="enquete__item">
-                        <span class="enquete__option">Opção 1</span> 
-                        <input type="text" name="" id="" class="enquete__input">Azul</li>
+
+                        <span class="enquete__option enquete__option--bold">Opção 1</span> 
+                        <div class="enquete__inputs">
+                            <input type="text" name="" id="" placeholder="Digite..." class="enquete__input">
+                            <i class="enquete__icon--float" data-feather="edit-2"></i>
+                        </div>
+
+                    </li>
+
                 </ul>
 
-                <hr>
-
                 <div class="enquete__actions">
-                    <button class="enquete__button">Cancelar</button>
+                    <button class="enquete__button enquete__button--back">Cancelar</button>
                     <button class="enquete__button">Salvar</button>
                 </div>
 
@@ -415,6 +449,7 @@
 
         </div>
     </div>
+    <script>feather.replace()</script>
 </body>
 
 </html>
