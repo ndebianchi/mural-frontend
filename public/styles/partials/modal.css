@@ -38,7 +38,8 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 .modal-novo-aviso,
 .modal-nova-ocorrencia,
 .modal-novo-achado-perdido,
-.modal-nova-enquete {
+.modal-nova-enquete,
+.modal-gerar-dados {
   width: 70vw !important;
   padding: 30px !important;
   /* Isso fez dar certinho a centralização */
