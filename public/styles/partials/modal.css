@@ -30,6 +30,10 @@
   animation: fadein 0.5s;
 }
 
+.modal--reserva {
+  width: 80vw;
+}
+
 /*888888888888888888888888888888888888888888888888888888888888888
 MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 88888888888888888888888888888888888888888888888888888888888888888*/
@@ -167,6 +171,16 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   font-size: 18px;
 }
 
+
+@media only screen and (min-width: 750px) {
+
+  img.new-foto-mensagem__img {
+    height: 75px;
+    margin: 0;
+    width: 75px;
+  }
+}
+
 @media (max-width: 970px) {
 
   .modal-novo-post,
@@ -178,11 +192,19 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
   }
 }
 
+@media (min-width: 320px) {
+  .new-foto-mensagem--reserva {
+    flex-flow: column nowrap;
+  }
+}
+
 @media (max-width: 750px) {
   .new-foto-mensagem {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  
 
   .new-foto-mensagem img {
     width: 70px;
