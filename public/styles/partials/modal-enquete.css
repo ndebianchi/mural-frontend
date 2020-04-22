@@ -33,6 +33,12 @@
   justify-content: flex-start;
 }
 
+.enquete__periodo--reserva {
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
 .enquete__option {
   color: #707070;
   margin-right: 10px;
@@ -42,9 +48,17 @@
   font-weight: bold;
 }
 
+.enquete__option--reserva {
+  margin: 0;
+}
+
 .enquete__select {
   margin: 5px 0 5px 10px;
   width: 100%;
+}
+
+.enquete__select--reserva {
+  margin: 10px 0 0;
 }
 
 .enquete__button {
@@ -116,6 +130,24 @@
   padding: 10px !important;
 }
 
+@media only screen and (min-width: 370px) {
+  .enquete__periodo--reserva {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .enquete__select--reserva {
+    margin: 0 0 0 10px;
+    max-width: 100px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .modal--reserva {
+    max-width: 320px;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .modal .enquete {
     max-width: 100%;
@@ -130,6 +162,10 @@
   .enquete__periodo {
     justify-content: center;
     width: 45%;
+  }
+
+  .enquete__periodo--reserva {
+    width: 100%;
   }
 
   #open-modal.modal-nova-enquete {
