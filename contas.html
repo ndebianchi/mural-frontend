@@ -44,6 +44,40 @@
         }
       </script>
 
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Mês', 'Orçamento', 'Água', 'Luz', 'Gás', 'Manutenção'],
+        ['jan',  100000,       10000,   19026,   9868,   19856],
+        ['fev',  110360,      11365,    26365,  7898,   32654],
+        ['mar',  90563,       11202,    29568,   6989,   12589],
+        ['abr',  89636,      5406,      18568,   2003,   19865],
+        ['mai',  96566,      5409,      17654,   5665,   15896],
+        ['jun',  98458,      9869,      15898,   7896,   17896],
+        ['jul',  105900,     8756,      14896,   6986,   32659],
+        ['ags',  101002,     9865,      17896,   8965,   21365],
+        ['set',  95896,      11365,     14369,   9865,   22365],
+        ['out',  96566,      10598,     15986,   6065,   23698],
+        ['nov',  99587,      15658,     16598,   5698,   23565],
+        ['dez',  102000,     12365,     18986,   4562,   24598]
+      ]);
+
+      var options = {
+        title: ' ',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chartMobile'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+
 </head>
 
 <body>
@@ -205,11 +239,13 @@
                   
         </div>
 
-        <div id="curve_chart" style="width: 900px; height: 400px"></div>
+        <div id="curve_chart" class="curve_contas"></div>
+        <div id="curve_chartMobile" class="curve_contasMobile"></div>
 
         <!-- Modais -->
         <div id="open-modal" class="modal">
         </div>
+        
 
     </div>
 </body>
