@@ -50,38 +50,42 @@
         }
     </script>
 
-<script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ['Mês', 'Orçamento', 'Água', 'Luz', 'Gás', 'Manutenção'],
-        ['jan',  100000,       10000,   19026,   9868,   19856],
-        ['fev',  110360,      11365,    26365,  7898,   32654],
-        ['mar',  90563,       11202,    29568,   6989,   12589],
-        ['abr',  89636,      5406,      18568,   2003,   19865],
-        ['mai',  96566,      5409,      17654,   5665,   15896],
-        ['jun',  98458,      9869,      15898,   7896,   17896],
-        ['jul',  105900,     8756,      14896,   6986,   32659],
-        ['ags',  101002,     9865,      17896,   8965,   21365],
-        ['set',  95896,      11365,     14369,   9865,   22365],
-        ['out',  96566,      10598,     15986,   6065,   23698],
-        ['nov',  99587,      15658,     16598,   5698,   23565],
-        ['dez',  102000,     12365,     18986,   4562,   24598]
-      ]);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Mês', 'Orçamento', 'Água', 'Luz', 'Gás', 'Manutenção'],
+                ['jan', 100000, 10000, 19026, 9868, 19856],
+                ['fev', 110360, 11365, 26365, 7898, 32654],
+                ['mar', 90563, 11202, 29568, 6989, 12589],
+                ['abr', 89636, 5406, 18568, 2003, 19865],
+                ['mai', 96566, 5409, 17654, 5665, 15896],
+                ['jun', 98458, 9869, 15898, 7896, 17896],
+                ['jul', 105900, 8756, 14896, 6986, 32659],
+                ['ags', 101002, 9865, 17896, 8965, 21365],
+                ['set', 95896, 11365, 14369, 9865, 22365],
+                ['out', 96566, 10598, 15986, 6065, 23698],
+                ['nov', 99587, 15658, 16598, 5698, 23565],
+                ['dez', 102000, 12365, 18986, 4562, 24598]
+            ]);
 
-      var options = {
-        title: ' ',
-        curveType: 'function',
-        legend: { position: 'bottom' }
-      };
+            var options = {
+                title: ' ',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                }
+            };
 
-      var chart = new google.visualization.LineChart(document.getElementById('curve_chartMobile'));
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chartMobile'));
 
-      chart.draw(data, options);
-    }
-  </script>
+            chart.draw(data, options);
+        }
+    </script>
 
 
 </head>
@@ -183,8 +187,8 @@
                         <div class="account-main">
                             <a href="javascript:void(0)"><img src="./public/img/icones-mural/Cinza/settings.svg"
                                     alt="">Configurações</a>
-                            <a href="javascript:void(0)"><img src="./public/img/icones-mural/Cinza/user.svg" alt="">Ver
-                                meu perfil</a>
+                            <a href="perfil.html"><img src="./public/img/icones-mural/Cinza/user.svg" alt="">Ver meu
+                                perfil</a>
                         </div>
                         <div class="account-footer">
                             <hr>
@@ -255,19 +259,25 @@
                         </select>
                     </div>
 
+                    <button class="btn-group"><a href="./editarGastos.html">Editar Gastos</a></button>
+
                     <button class="btn-group" onclick="openModal('nova-enquete')">Gerenciar Dados</button>
+                    
 
                 </div>
 
             </div>
 
-        <div id="curve_chart" class="curve_contas"></div>
-        <div id="curve_chartMobile" class="curve_contasMobile"></div>
+            <div id="curve_chart" class="curve_contas"></div>
+            <div id="curve_chartMobile" class="curve_contasMobile"></div>
 
-        <!-- Modais -->
-        <div id="open-modal" class="modal">
-        </div>
-        
+            <!-- Modais -->
+            <div id="open-modal" class="modal">
+                <div id="nova-enquete" class="enquete">
+                    <div class="enquete__header">
+                        <h2 class="enquete__heading">relato de ocorrências</h2>
+                        <i class="enquete__icon" data-feather="x"></i>
+                    </div>
 
                     <div class="enquete__body">
                         <div class="escolha-periodo">
@@ -329,8 +339,10 @@
 
 
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="orcamento" class="enquete__input enquete__input--radio">
-                                    <label for="orcamento" class="enquete__option enquete__option--bold">Orçamento</label>
+                                    <input type="radio" name="tipo-ocorrencia" id="orcamento"
+                                        class="enquete__input enquete__input--radio">
+                                    <label for="orcamento"
+                                        class="enquete__option enquete__option--bold">Orçamento</label>
                                 </div>
 
                             </li>
@@ -339,7 +351,8 @@
 
 
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="agua" class="enquete__input enquete__input--radio">
+                                    <input type="radio" name="tipo-ocorrencia" id="agua"
+                                        class="enquete__input enquete__input--radio">
                                     <label for="agua" class="enquete__option enquete__option--bold">Água</label>
                                 </div>
 
@@ -349,7 +362,8 @@
 
 
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="luz" class="enquete__input enquete__input--radio">
+                                    <input type="radio" name="tipo-ocorrencia" id="luz"
+                                        class="enquete__input enquete__input--radio">
                                     <label for="luz" class="enquete__option enquete__option--bold">Luz</label>
                                 </div>
 
@@ -357,21 +371,25 @@
 
                             <li class="enquete__item enquete__item--radio">
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="gas" class="enquete__input enquete__input--radio">
+                                    <input type="radio" name="tipo-ocorrencia" id="gas"
+                                        class="enquete__input enquete__input--radio">
                                     <label for="gas" class="enquete__option enquete__option--bold">Gás</label>
                                 </div>
                             </li>
 
                             <li class="enquete__item enquete__item--radio">
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="manutencao" class="enquete__input enquete__input--radio">
-                                    <label for="manutencao" class="enquete__option enquete__option--bold">Manutenção</label>
+                                    <input type="radio" name="tipo-ocorrencia" id="manutencao"
+                                        class="enquete__input enquete__input--radio">
+                                    <label for="manutencao"
+                                        class="enquete__option enquete__option--bold">Manutenção</label>
                                 </div>
                             </li>
-                            
+
                             <li class="enquete__item enquete__item--radio">
                                 <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="outros" class="enquete__input enquete__input--radio">
+                                    <input type="radio" name="tipo-ocorrencia" id="outros"
+                                        class="enquete__input enquete__input--radio">
                                     <label for="outros" class="enquete__option enquete__option--bold">Outros</label>
                                 </div>
                             </li>
@@ -384,13 +402,20 @@
                         <button class="enquete__button">Salvar</button>
                     </div>
 
+
                 </div>
+
             </div>
 
+
+
         </div>
-        <script>
-            feather.replace()
-        </script>
+    </div>
+
+    </div>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>

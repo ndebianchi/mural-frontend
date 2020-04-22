@@ -31,6 +31,10 @@ Começo do selecionar período
     margin-left: 10px;
 }
 
+.cabecalho-periodo button a {
+    color: #FFF;
+}
+
 .title-pages-btn{
     display: flex;
     justify-content: space-between;
