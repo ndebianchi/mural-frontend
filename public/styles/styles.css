@@ -18,6 +18,8 @@
 @import "./partials/cadastro.css";
 @import "./partials/login.css";
 @import "./partials/gerenciar-perfis.css";
+@import "./partials/calendario.css";
+@import "./partials/contas.css";
 
 * {
     box-sizing: border-box;

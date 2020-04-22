@@ -119,12 +119,12 @@
 
  @media (max-width: 992px) {
 
-   /* esconde reserva-mobile */
+   /* mostra reserva-mobile */
         .boxMobile {
             display: block;
         }
     
-   /* mostra reserva-desktop */
+   /* esconde reserva-desktop */
         .boxDesktop {
             display: none;
         }
