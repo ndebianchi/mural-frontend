@@ -26,11 +26,11 @@ header .options a {
     display: flex;
     margin: 10px;
     padding: 10px;
-    height: 45px;
+    height: 40px;
 }
 
 header .options a img {
-    width: 25px;
+    width: 20px;
 }
 
 header .options a span {
