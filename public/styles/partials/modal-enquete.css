@@ -16,6 +16,11 @@
   text-transform: capitalize;
 }
 
+.enquete__heading--radio {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
 .enquete__body {
   max-width: 400px;
   margin: 0 auto;
@@ -39,6 +44,7 @@
 
 .enquete__select {
   margin: 5px 0 5px 10px;
+  width: 100%;
 }
 
 .enquete__button {
@@ -61,7 +67,6 @@
 }
 
 .enquete__list {
-  border-bottom: solid .2px #F70065;
   padding: 20px 0;
 }
 
@@ -77,11 +82,20 @@
   width: 60%;
 }
 
+.enquete__inputs--radio {
+  display: flex;
+  padding: 5px 0;
+}
+
 .enquete__input {
   border: solid 1px #707070;
   border-radius: 8px;
   padding: 5px 20px;
   width: 100%;
+}
+
+.enquete__input--radio {
+  width: auto;
 }
 
 .enquete__icon--float {
@@ -93,6 +107,7 @@
 }
 
 .enquete__actions {
+  border-top: solid .2px #F70065;
   display: flex;
   justify-content: flex-end;
 }
@@ -102,16 +117,34 @@
 }
 
 @media only screen and (min-width: 500px) {
+  .enquete {
+    max-width: 100%;
+  }
+
   .escolha-periodo {
     display: flex;
     justify-content: space-between;
+    margin: 15px 0;
   }
 
   .enquete__periodo {
     justify-content: center;
+    width: 45%;
   }
 
   #open-modal.modal-nova-enquete {
+    max-width: 600px;
     width: 50vw !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .enquete__list--radio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .enquete__item--radio {
+    width: 50%;
   }
 }
