@@ -199,220 +199,220 @@
                 </div>
             </header>
 
-            <!-- Divisória (parte do Titulo) -->
-            <div class="page-title-linha-box"></div>
+            <!-- Conteudo Principal -->
+            <main>
 
-            <!-- Selecionar período -->
-            <div class="cabecalho-periodo">
-                <div class="escolha-periodo">
-                    <div class="form-group">
-                        <label for="de">De</label>
-                        <div class="custom-select" id="select-tempo-de">
-                            <select name="de">
-                                <option value="0">Início</option>
-                                <option value="1">Jan/2020</option>
-                                <option value="2">Fev/2020</option>
-                                <option value="3">Mar/2020</option>
-                                <option value="4">Abr/2020</option>
-                                <option value="5">Mai/2020</option>
-                                <option value="6">Jun/2020</option>
-                                <option value="7">Jul/2020</option>
-                                <option value="8">Ago/2020</option>
-                                <option value="9">Set/2020</option>
-                                <option value="10">Out/2020</option>
-                                <option value="11">Nov/2020</option>
-                                <option value="12">Dez/2020</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="ate">Até</label>
-                        <div class="custom-select" id="select-tempo-ate">
-                            <select name="ate">
-                                <option value="0">Fim</option>
-                                <option value="1">Jan/2020</option>
-                                <option value="2">Fev/2020</option>
-                                <option value="3">Mar/2020</option>
-                                <option value="4">Abr/2020</option>
-                                <option value="5">Mai/2020</option>
-                                <option value="6">Jun/2020</option>
-                                <option value="7">Jul/2020</option>
-                                <option value="8">Ago/2020</option>
-                                <option value="9">Set/2020</option>
-                                <option value="10">Out/2020</option>
-                                <option value="11">Nov/2020</option>
-                                <option value="12">Dez/2020</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="visualizar">Visualizar</label>
-                        <div class="custom-select">
-                            <select name="visualizar">
-                                <option value="0">Todos</option>
-                                <option value="1">Orçamento</option>
-                                <option value="2">Água</option>
-                                <option value="3">Luz</option>
-                                <option value="4">Gás</option>
-                                <option value="5">Manutenção</option>
-                            </select>
-                        </div>
-                    </div>
-                        
-                    <div class="form-group mobileBlock">
-                        <button class="btn-group"><a href="./editarGastos.html">Editar Gastos</a></button>
-                    </div>
+                <!-- Divisória (parte do Titulo) -->
+                <div class="page-title-linha-box"></div>
 
-                    <div class="form-group mobileBlock">
-                        <button class="btn-group" onclick="openModal('nova-enquete')">Gerenciar Dados</button>
-                    </div>
+                <!-- Selecionar período -->
+                <div class="cabecalho-periodo">
+                    <div class="escolha-periodo">
+                        <div class="form-group">
+                            <label for="de">De</label>
+                            <div class="custom-select" id="select-tempo-de">
+                                <select name="de">
+                                    <option value="0">Início</option>
+                                    <option value="1">Jan/2020</option>
+                                    <option value="2">Fev/2020</option>
+                                    <option value="3">Mar/2020</option>
+                                    <option value="4">Abr/2020</option>
+                                    <option value="5">Mai/2020</option>
+                                    <option value="6">Jun/2020</option>
+                                    <option value="7">Jul/2020</option>
+                                    <option value="8">Ago/2020</option>
+                                    <option value="9">Set/2020</option>
+                                    <option value="10">Out/2020</option>
+                                    <option value="11">Nov/2020</option>
+                                    <option value="12">Dez/2020</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ate">Até</label>
+                            <div class="custom-select" id="select-tempo-ate">
+                                <select name="ate">
+                                    <option value="0">Fim</option>
+                                    <option value="1">Jan/2020</option>
+                                    <option value="2">Fev/2020</option>
+                                    <option value="3">Mar/2020</option>
+                                    <option value="4">Abr/2020</option>
+                                    <option value="5">Mai/2020</option>
+                                    <option value="6">Jun/2020</option>
+                                    <option value="7">Jul/2020</option>
+                                    <option value="8">Ago/2020</option>
+                                    <option value="9">Set/2020</option>
+                                    <option value="10">Out/2020</option>
+                                    <option value="11">Nov/2020</option>
+                                    <option value="12">Dez/2020</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="visualizar">Visualizar</label>
+                            <div class="custom-select">
+                                <select name="visualizar">
+                                    <option value="0">Todos</option>
+                                    <option value="1">Orçamento</option>
+                                    <option value="2">Água</option>
+                                    <option value="3">Luz</option>
+                                    <option value="4">Gás</option>
+                                    <option value="5">Manutenção</option>
+                                </select>
+                            </div>
+                        </div>
+                            
+                        <div class="form-group mobileBlock">
+                            <button class="btn-group"><a href="./editarGastos.html">Editar Gastos</a></button>
+                        </div>
 
+                        <div class="form-group mobileBlock">
+                            <button class="btn-group" onclick="openModal('nova-enquete')">Gerenciar Dados</button>
+                        </div>
+
+                    </div>
                 </div>
-
-            </div>
+            </main>
 
             <div id="curve_chart" class="curve_contas"></div>
             <div id="curve_chartMobile" class="curve_contasMobile"></div>
 
-            <!-- Modais -->
-            <div id="open-modal" class="modal">
-                <div id="nova-enquete" class="enquete">
-                    <div class="enquete__header">
-                        <h2 class="enquete__heading">relato de ocorrências</h2>
-                        <i class="enquete__icon" data-feather="x"></i>
-                    </div>
+        </div>
 
-                    <div class="enquete__body">
-                        <div class="escolha-periodo">
+        <!-- Modais -->
+        <div id="open-modal" class="modal">
+            <div id="nova-enquete" class="enquete">
+                <div class="enquete__header">
+                    <h2 class="enquete__heading">relato de ocorrências</h2>
+                    <i class="enquete__icon" data-feather="x"></i>
+                </div>
 
-                            <div class="enquete__periodo">
-                                <div class="periodo-text">
-                                    <span class="enquete__option">De</span>
-                                </div>
+                <div class="enquete__body">
+                    <div class="escolha-periodo">
 
-                                <div class="custom-select enquete__select" style="width:200px;">
-                                    <select>
-                                        <option value="0">Início</option>
-                                        <option value="1">Jan/2020</option>
-                                        <option value="2">Fev/2020</option>
-                                        <option value="3">Mar/2020</option>
-                                        <option value="4">Abr/2020</option>
-                                        <option value="5">Mai/2020</option>
-                                        <option value="6">Jun/2020</option>
-                                        <option value="7">Jul/2020</option>
-                                        <option value="8">Ago/2020</option>
-                                        <option value="9">Set/2020</option>
-                                        <option value="10">Out/2020</option>
-                                        <option value="11">Nov/2020</option>
-                                        <option value="12">Dez/2020</option>
-                                    </select>
-                                </div>
+                        <div class="enquete__periodo">
+                            <div class="periodo-text">
+                                <span class="enquete__option">De</span>
                             </div>
 
-                            <div class="enquete__periodo">
-                                <div class="periodo-text">
-                                    <span class="enquete__option">Até</span>
-                                </div>
-
-                                <div class="custom-select enquete__select" style="width:200px;">
-                                    <select>
-                                        <option value="0">Fim</option>
-                                        <option value="1">Jan/2020</option>
-                                        <option value="2">Fev/2020</option>
-                                        <option value="3">Mar/2020</option>
-                                        <option value="4">Abr/2020</option>
-                                        <option value="5">Mai/2020</option>
-                                        <option value="6">Jun/2020</option>
-                                        <option value="7">Jul/2020</option>
-                                        <option value="8">Ago/2020</option>
-                                        <option value="9">Set/2020</option>
-                                        <option value="10">Out/2020</option>
-                                        <option value="11">Nov/2020</option>
-                                        <option value="12">Dez/2020</option>
-                                    </select>
-                                </div>
+                            <div class="custom-select enquete__select" style="width:200px;">
+                                <select>
+                                    <option value="0">Início</option>
+                                    <option value="1">Jan/2020</option>
+                                    <option value="2">Fev/2020</option>
+                                    <option value="3">Mar/2020</option>
+                                    <option value="4">Abr/2020</option>
+                                    <option value="5">Mai/2020</option>
+                                    <option value="6">Jun/2020</option>
+                                    <option value="7">Jul/2020</option>
+                                    <option value="8">Ago/2020</option>
+                                    <option value="9">Set/2020</option>
+                                    <option value="10">Out/2020</option>
+                                    <option value="11">Nov/2020</option>
+                                    <option value="12">Dez/2020</option>
+                                </select>
                             </div>
-
                         </div>
 
-                        <h2 class="enquete__heading enquete__heading--radio">Selecione:</h2>
+                        <div class="enquete__periodo">
+                            <div class="periodo-text">
+                                <span class="enquete__option">Até</span>
+                            </div>
 
-                        <ul class="enquete__list enquete__list--radio">
-                            <li class="enquete__item enquete__item--radio">
+                            <div class="custom-select enquete__select" style="width:200px;">
+                                <select>
+                                    <option value="0">Fim</option>
+                                    <option value="1">Jan/2020</option>
+                                    <option value="2">Fev/2020</option>
+                                    <option value="3">Mar/2020</option>
+                                    <option value="4">Abr/2020</option>
+                                    <option value="5">Mai/2020</option>
+                                    <option value="6">Jun/2020</option>
+                                    <option value="7">Jul/2020</option>
+                                    <option value="8">Ago/2020</option>
+                                    <option value="9">Set/2020</option>
+                                    <option value="10">Out/2020</option>
+                                    <option value="11">Nov/2020</option>
+                                    <option value="12">Dez/2020</option>
+                                </select>
+                            </div>
+                        </div>
 
-
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="orcamento"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="orcamento"
-                                        class="enquete__option enquete__option--bold">Orçamento</label>
-                                </div>
-
-                            </li>
-
-                            <li class="enquete__item enquete__item--radio">
-
-
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="agua"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="agua" class="enquete__option enquete__option--bold">Água</label>
-                                </div>
-
-                            </li>
-
-                            <li class="enquete__item enquete__item--radio">
-
-
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="luz"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="luz" class="enquete__option enquete__option--bold">Luz</label>
-                                </div>
-
-                            </li>
-
-                            <li class="enquete__item enquete__item--radio">
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="gas"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="gas" class="enquete__option enquete__option--bold">Gás</label>
-                                </div>
-                            </li>
-
-                            <li class="enquete__item enquete__item--radio">
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="manutencao"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="manutencao"
-                                        class="enquete__option enquete__option--bold">Manutenção</label>
-                                </div>
-                            </li>
-
-                            <li class="enquete__item enquete__item--radio">
-                                <div class="enquete__inputs enquete__inputs--radio">
-                                    <input type="radio" name="tipo-ocorrencia" id="outros"
-                                        class="enquete__input enquete__input--radio">
-                                    <label for="outros" class="enquete__option enquete__option--bold">Outros</label>
-                                </div>
-                            </li>
-
-                        </ul>
                     </div>
 
-                    <div class="enquete__actions">
-                        <button class="enquete__button enquete__button--back">Cancelar</button>
-                        <button class="enquete__button">Salvar</button>
-                    </div>
+                    <h2 class="enquete__heading enquete__heading--radio">Selecione:</h2>
+
+                    <ul class="enquete__list enquete__list--radio">
+                        <li class="enquete__item enquete__item--radio">
 
 
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="orcamento"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="orcamento"
+                                    class="enquete__option enquete__option--bold">Orçamento</label>
+                            </div>
+
+                        </li>
+
+                        <li class="enquete__item enquete__item--radio">
+
+
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="agua"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="agua" class="enquete__option enquete__option--bold">Água</label>
+                            </div>
+
+                        </li>
+
+                        <li class="enquete__item enquete__item--radio">
+
+
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="luz"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="luz" class="enquete__option enquete__option--bold">Luz</label>
+                            </div>
+
+                        </li>
+
+                        <li class="enquete__item enquete__item--radio">
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="gas"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="gas" class="enquete__option enquete__option--bold">Gás</label>
+                            </div>
+                        </li>
+
+                        <li class="enquete__item enquete__item--radio">
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="manutencao"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="manutencao"
+                                    class="enquete__option enquete__option--bold">Manutenção</label>
+                            </div>
+                        </li>
+
+                        <li class="enquete__item enquete__item--radio">
+                            <div class="enquete__inputs enquete__inputs--radio">
+                                <input type="radio" name="tipo-ocorrencia" id="outros"
+                                    class="enquete__input enquete__input--radio">
+                                <label for="outros" class="enquete__option enquete__option--bold">Outros</label>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="enquete__actions">
+                    <button class="enquete__button enquete__button--back">Cancelar</button>
+                    <button class="enquete__button">Salvar</button>
                 </div>
 
             </div>
-
-
-
         </div>
+
     </div>
 
     </div>

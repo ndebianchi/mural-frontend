@@ -23,8 +23,8 @@
             <div id="logo-nav">
                 <a href="index.html"><img src="./public/img/logos-mural/logo-h-branco.svg" alt="Mural"></a>
             </div>
-            <a href="index.html"><img src="./public/img/icones-mural/Branco/avisos.svg" alt="Avisos">Avisos</a>
             <a href="index.html"><img src="./public/img/icones-mural/Branco/home.svg" alt="Inicio">Início</a>
+            <a href="index.html"><img src="./public/img/icones-mural/Branco/avisos.svg" alt="Avisos">Avisos</a>
             <a href="ocorrencias.html"><img src="./public/img/icones-mural/Branco/ocorrencias.svg" alt="Ocorrencias">Ocorrências</a>
             <a href="reservas.html"><img src="./public/img/icones-mural/Branco/reservas.svg" alt="Reservas">Reservas</a>
             <a href="agenda.html"><img src="./public/img/icones-mural/Branco/agenda.svg" alt="Agenda">Agenda</a>
@@ -104,38 +104,21 @@
                 </div>
             </header>
 
-            <!-- Divisória (parte do Titulo) -->
-            <div class="page-title-linha-box"></div>
+            <!-- Conteudo Principal -->
+            <main>
 
-            <!-- Selecionar período -->
-            <div class="cabecalho-periodo">
-                <div class="escolha-periodo">
-                    <div class="periodo-text">
-                        <span>De</span>
-                    </div>
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                        <option value="0">Início</option>
-                        <option value="1">Jan/2020</option>
-                        <option value="2">Fev/2020</option>
-                        <option value="3">Mar/2020</option>
-                        <option value="4">Abr/2020</option>
-                        <option value="5">Mai/2020</option>
-                        <option value="6">Jun/2020</option>
-                        <option value="7">Jul/2020</option>
-                        <option value="8">Ago/2020</option>
-                        <option value="9">Set/2020</option>
-                        <option value="10">Out/2020</option>
-                        <option value="11">Nov/2020</option>
-                        <option value="12">Dez/2020</option>
-                        </select>
-                    </div>
-                    <div class="periodo-text">
-                        <span>até</span>
-                    </div>
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                            <option value="0">Fim</option>
+                <!-- Divisória (parte do Titulo) -->
+                <div class="page-title-linha-box"></div>
+
+                <!-- Selecionar período -->
+                <div class="cabecalho-periodo">
+                    <div class="escolha-periodo">
+                        <div class="periodo-text">
+                            <span>De</span>
+                        </div>
+                        <div class="custom-select" id="select-tempo" style="width:200px;">
+                            <select>
+                            <option value="0">Início</option>
                             <option value="1">Jan/2020</option>
                             <option value="2">Fev/2020</option>
                             <option value="3">Mar/2020</option>
@@ -148,21 +131,40 @@
                             <option value="10">Out/2020</option>
                             <option value="11">Nov/2020</option>
                             <option value="12">Dez/2020</option>
-                        </select>
-                    </div> 
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                        <option value="0">Mostrar</option>
-                        <option value="1">Todas</option>
-                        <option value="2">Respondidas</option>
-                        <option value="3">Em análise</option>
-                        </select>
+                            </select>
+                        </div>
+                        <div class="periodo-text">
+                            <span>até</span>
+                        </div>
+                        <div class="custom-select" id="select-tempo" style="width:200px;">
+                            <select>
+                                <option value="0">Fim</option>
+                                <option value="1">Jan/2020</option>
+                                <option value="2">Fev/2020</option>
+                                <option value="3">Mar/2020</option>
+                                <option value="4">Abr/2020</option>
+                                <option value="5">Mai/2020</option>
+                                <option value="6">Jun/2020</option>
+                                <option value="7">Jul/2020</option>
+                                <option value="8">Ago/2020</option>
+                                <option value="9">Set/2020</option>
+                                <option value="10">Out/2020</option>
+                                <option value="11">Nov/2020</option>
+                                <option value="12">Dez/2020</option>
+                            </select>
+                        </div> 
+                        <div class="custom-select" style="width:200px;">
+                            <select>
+                            <option value="0">Mostrar</option>
+                            <option value="1">Todas</option>
+                            <option value="2">Respondidas</option>
+                            <option value="3">Em análise</option>
+                            </select>
+                        </div>
+                        <button class="btn-group">Gerar relatório</button>  
                     </div>
-                    <button class="btn-group">Gerar relatório</button>  
                 </div>
-            </div>
-            <!-- Conteudo Principal -->
-            <main>
+
                 <!-- Feed Principal -->
                 <section class="lista-enquetes">
                     <div class="card ocorr">
