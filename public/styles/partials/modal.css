@@ -172,6 +172,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 }
 
 
+
 @media only screen and (min-width: 750px) {
 
   img.new-foto-mensagem__img {
@@ -203,9 +204,6 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  
-
   .new-foto-mensagem img {
     width: 70px;
     height: 70px;
@@ -224,6 +222,10 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
     width: 90vw !important;
   }
 
+  .modal-idmodal-agendaMob, .modal-idmodal-agenda{
+    width: 80vw !important;
+  }
+
   .new-foto-categoria {
     margin-top: 15px;
   }
@@ -232,6 +234,12 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
     width: 95vh;
     height: 55vw;
   }
+
+  .nome-evento textarea{
+    width: 95vh;
+    height: 15vw;
+  }
+
   .new-cancel-send {
     margin-top: 15px;
   }

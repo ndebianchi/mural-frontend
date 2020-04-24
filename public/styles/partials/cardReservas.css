@@ -46,7 +46,7 @@
     .boxMobile {
         margin: 25px;
         width: 400px;
-        height: 200px;
+		height: 200px;
         text-align: center;
         border-radius: 3px;
         -webkit-transition: 200ms ease-in-out;
