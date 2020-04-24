@@ -85,6 +85,7 @@ div.feed-container > main {
     header .menu-btn {
         cursor: default;
         opacity: 0;
+        display: none;
     }
 
     header .options a {
