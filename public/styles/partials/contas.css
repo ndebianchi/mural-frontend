@@ -2,6 +2,43 @@
     overflow: hidden;
 }
 
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-group > .custom-select {
+    width: 100%;
+    max-width: 100%;
+    min-width: 90px;
+}
+
+.form-group > button {
+    width:40%;
+    justify-content: center;
+}
+
+.form-group > .custom-select > select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mobileBlock {
+    width: auto;
+    justify-self: auto;
+    margin-top: 20px;
+}
+
+.mobileBlock > button {
+    width: auto;
+    min-width: 120px;
+}
+
 .curve_contas {
     width: 100%; 
     height: auto;
@@ -16,14 +53,34 @@
     margin: 0 1%;
 }
 
-.mobileBlock {
-    width:40%;
-    justify-content: center;
-    margin: 15px 5% 0px;
-}
-
 @media (min-width: 992px) {
 
+    .form-group {
+        width: auto;
+    }
+    
+    .form-group > .custom-select {
+        width: 100%;
+        max-width: 100%;
+        min-width: 90px;
+    }
+    
+    .form-group > .custom-select > select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mobileBlock {
+        width: auto;
+        justify-self: auto;
+        margin-top: 12px;
+    }
+    
+    .mobileBlock > button {
+        width: auto;
+        min-width: 120px;
+    }
+        
     /* mostra curve_contas */
     .curve_contas {
         display: block;
@@ -35,9 +92,11 @@
     }
     
     .mobileBlock {
+        margin-top: 12px;
+        /*
         width:auto;
         justify-content: center;
-        margin: auto;
+        */
     }
 }
 

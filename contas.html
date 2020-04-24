@@ -205,63 +205,67 @@
             <!-- Selecionar período -->
             <div class="cabecalho-periodo">
                 <div class="escolha-periodo">
-                    <div class="periodo-text">
-                        <span>De</span>
+                    <div class="form-group">
+                        <label for="de">De</label>
+                        <div class="custom-select" id="select-tempo-de">
+                            <select name="de">
+                                <option value="0">Início</option>
+                                <option value="1">Jan/2020</option>
+                                <option value="2">Fev/2020</option>
+                                <option value="3">Mar/2020</option>
+                                <option value="4">Abr/2020</option>
+                                <option value="5">Mai/2020</option>
+                                <option value="6">Jun/2020</option>
+                                <option value="7">Jul/2020</option>
+                                <option value="8">Ago/2020</option>
+                                <option value="9">Set/2020</option>
+                                <option value="10">Out/2020</option>
+                                <option value="11">Nov/2020</option>
+                                <option value="12">Dez/2020</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                            <option value="0">Início</option>
-                            <option value="1">Jan/2020</option>
-                            <option value="2">Fev/2020</option>
-                            <option value="3">Mar/2020</option>
-                            <option value="4">Abr/2020</option>
-                            <option value="5">Mai/2020</option>
-                            <option value="6">Jun/2020</option>
-                            <option value="7">Jul/2020</option>
-                            <option value="8">Ago/2020</option>
-                            <option value="9">Set/2020</option>
-                            <option value="10">Out/2020</option>
-                            <option value="11">Nov/2020</option>
-                            <option value="12">Dez/2020</option>
-                        </select>
+                    <div class="form-group">
+                        <label for="ate">Até</label>
+                        <div class="custom-select" id="select-tempo-ate">
+                            <select name="ate">
+                                <option value="0">Fim</option>
+                                <option value="1">Jan/2020</option>
+                                <option value="2">Fev/2020</option>
+                                <option value="3">Mar/2020</option>
+                                <option value="4">Abr/2020</option>
+                                <option value="5">Mai/2020</option>
+                                <option value="6">Jun/2020</option>
+                                <option value="7">Jul/2020</option>
+                                <option value="8">Ago/2020</option>
+                                <option value="9">Set/2020</option>
+                                <option value="10">Out/2020</option>
+                                <option value="11">Nov/2020</option>
+                                <option value="12">Dez/2020</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="periodo-text">
-                        <span>até</span>
+                    <div class="form-group">
+                        <label for="visualizar">Visualizar</label>
+                        <div class="custom-select">
+                            <select name="visualizar">
+                                <option value="0">Todos</option>
+                                <option value="1">Orçamento</option>
+                                <option value="2">Água</option>
+                                <option value="3">Luz</option>
+                                <option value="4">Gás</option>
+                                <option value="5">Manutenção</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="custom-select" id="select-tempo" style="width:200px;">
-                        <select>
-                            <option value="0">Fim</option>
-                            <option value="1">Jan/2020</option>
-                            <option value="2">Fev/2020</option>
-                            <option value="3">Mar/2020</option>
-                            <option value="4">Abr/2020</option>
-                            <option value="5">Mai/2020</option>
-                            <option value="6">Jun/2020</option>
-                            <option value="7">Jul/2020</option>
-                            <option value="8">Ago/2020</option>
-                            <option value="9">Set/2020</option>
-                            <option value="10">Out/2020</option>
-                            <option value="11">Nov/2020</option>
-                            <option value="12">Dez/2020</option>
-                        </select>
-                    </div>
-                    <div class="periodo-text">
-                        <span>Visualizar</span>
-                    </div>
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                            <option value="0">Todos</option>
-                            <option value="1">Orçamento</option>
-                            <option value="2">Água</option>
-                            <option value="3">Luz</option>
-                            <option value="4">Gás</option>
-                            <option value="5">Manutenção</option>
-                        </select>
+                        
+                    <div class="form-group mobileBlock">
+                        <button class="btn-group"><a href="./editarGastos.html">Editar Gastos</a></button>
                     </div>
 
-                    <button class="btn-group mobileBlock"><a href="./editarGastos.html">Editar Gastos</a></button>
-
-                    <button class="btn-group mobileBlock" onclick="openModal('nova-enquete')">Gerenciar Dados</button>
+                    <div class="form-group mobileBlock">
+                        <button class="btn-group" onclick="openModal('nova-enquete')">Gerenciar Dados</button>
+                    </div>
 
                 </div>
 
