@@ -530,7 +530,7 @@ MODAIS NOVO POST / NOVO AVISO / NOVA OCORRÊNCIA / NOVO OBJETO
 
   /* Ajusta posicionamento do dropdown */
   #profile-dropdown {
-    top: 90px;
-    right: 5%;
+    top: 55px;
+    right: 4%;
   }
 }

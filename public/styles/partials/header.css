@@ -98,4 +98,22 @@ div.feed-container > main {
         font-weight: bold;
         padding-left: 10px;
     }
+
+    /* Ajusta proporção do cabeçalho na tela */
+    div.feed-container > header {
+        width: 75vw;
+        justify-content: center;
+    }
+
+    /* Reposiciona de forma fixa o profile-icon no canto suerior esquerdo */
+    div.feed-container > header > button.profile-icon {
+        position: fixed;
+        top: 0px;
+        right: 5%;
+    }
+
+    /* Ajusta margem superior para considerar fixação do menu superior (Header) */
+    div.feed-container > main {
+        margin-top: 80px;
+    }
 }
