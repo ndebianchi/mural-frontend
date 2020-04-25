@@ -44,6 +44,10 @@
 /* MEDIA QUERY */
 @media (min-width: 768px){
 
+    .page-title{
+        margin: 22px auto;
+    }
+
     .page-title span{        
         font-size: 40px;        
     }
